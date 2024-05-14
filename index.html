@@ -7,28 +7,90 @@
         <link rel="stylesheet" href="css/application.css">
     </head>
     <body>  
+        <div id="header">
+            <header>
+                <div class="row">
+                    <img src="images/netmatters-logo.png" alt="Netmatters">
+                    <a class="mobile" href="#"><img class="icon-phone" src="images/icons/phone_in_talk.png"></a>
+                </div>
+                <form method="GET" action="#" accept-charset="UTF-8" class="search-form mobile-priority">
+                    <label for="search-input" class="hidden">Search:</label>
+                    <input class="form-control search-bar" placeholder="Search..." id="search-input" name="keyword" type="text" value="">
+                    <button type="submit" id="search-submit">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                </form>
+            </header>
+        </div>
+        <div>
+            <main></main>
+        </div>
         <div id="container">
-            <div id="header">
-                <header>
-                    <div class="row">
-                        <img src="images/netmatters-logo.png" alt="Netmatters">
-                        <a class="mobile" href="#"><img class="icon-phone" src="images/icons/phone_in_talk.png"></a>
+            <footer>
+                <div class="container">
+                    <div class="footer-logo">
+                        <picture>
+                            <source srcset="images/nm-logo-white-med.webp" type="image/webp">
+                            <source srcset="images/nm-logo-white-med.png" type="image/png">
+                            <img src="images/nm-logo-white-med.png" alt="Netmatters">
+                        </picture>
                     </div>
-                    <form method="GET" action="#" accept-charset="UTF-8" class="search-form mobile-priority">
-                        <label for="search-input" class="hidden">Search:</label>
-                        <input class="form-control search-bar" placeholder="Search..." id="search-input" name="keyword" type="text" value="">
-                        <button type="submit" id="search-submit">
-                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                        </button>
-                    </form>
-                </header>
-            </div>
-            <div>
-                <main id="main"></main>
-            </div>
-            <div>
-                <footer id="footer"></footer>
-            </div>
+                    <h4>Follow us on:</h4>
+                    <div class="footer-social-logos">
+                        <a class="facebook btn-primary" rel="noopener noreferrer"><span class="icon-facebook"></span></a>                        
+                        <a class="linkedin btn-primary" rel="noopener noreferrer"><span class="fa fa-linkedin"></span></a>                        
+                        <a class="twitter btn-primary" rel="noopener noreferrer"><span class="icon-twitter"></span></a>                        
+                        <a class="instagram btn-primary" rel="noopener noreferrer"><span class="icon-instagram"></span></a>
+                    </div>
+                    <h4>About Netmatters</h4>
+                    <ul>
+                        <li>News</li>
+                        <li>Our Careers</li>
+                        <li>Our Team</li>
+                        <li>Contact Us</li>
+                        <li>Privacy Policy</li>
+                        <li>Cookie Policy</li>
+                        <li>Data Retention &amp; Disposal Policy</li>
+                        <li>CCTV Policy</li>
+                        <li>Environmental Policy</li>
+                        <li>Terms &amp; Conditions</li>
+                    </ul>
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li>Bespoke Software</li>
+                        <li>IT Support</li>
+                        <li>Digital Marketing</li>
+                        <li>Telecoms Services</li>
+                        <li>Web Design</li>
+                        <li>Cyber Security</li>
+                        <li>Developer Training</li>
+                    </ul>
+                    <h4>Our Industries</h4>
+                    <ul>
+                        <li>Financial Services</li>
+                        <li>Construction</li>
+                        <li>Retail &amp; E-Commerce</li>
+                        <li>Non-Profits</li>
+                        <li>SME's</li>
+                        <li>Healthcare</li>
+                        <li>Education &amp; Training</li>
+                        <li>Travel &amp; Leisure</li>
+                    </ul>
+                    <h4>Locations</h4>
+                    <ul>
+                        <li>Cambridge Office</li>
+                        <li>Wymondham Office</li>
+                        <li>Great Yarmouth Office</li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container container-footer-bottom">
+                        <div class="license">
+                            &copy; Copyright Netmatters 2024. <br>  All rights reserved. <br>  Sitemap
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
     </body>
 </html>
