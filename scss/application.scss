@@ -1,4 +1,52 @@
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+header{
+	display: block;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
+    letter-spacing: .4px;
+}
+
+.row{
+	display: flex;
+	justify-content: right;
+	flex: 1;
+	align-items: stretch;
+
+}
+
+img {
+    vertical-align: middle;
+	border: 0;
+}
+
 img[src*="logo"] {
 	width: 35vw;
 	max-width: 500px;
+}
+
+.icon-phone{
+	flex-align: right;
+
+}
+
+.hidden{
+	display:none;
+}
+
+@media (min-width: 768px){
+	.mobile-priority,
+	.icon-phone{
+		display:none;
+	}
+	
+}@else{
+	.mobile-priority{
+		color:red;
+	}
 }

@@ -1,14 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="css/application.css">
     </head>
     <body>  
         <div id="container">
             <div id="header">
                 <header>
-                    <img src="images/netmatters-logo.png" alt="Netmatters">
+                    <div class="row">
+                        <img src="images/netmatters-logo.png" alt="Netmatters">
+                        <a class="mobile" href="#"><img class="icon-phone" src="images/icons/phone_in_talk.png"></a>
+                    </div>
+                    <form method="GET" action="#" accept-charset="UTF-8" class="search-form mobile-priority">
+                        <label for="search-input" class="hidden">Search:</label>
+                        <input class="form-control search-bar" placeholder="Search..." id="search-input" name="keyword" type="text" value="">
+                        <button type="submit" id="search-submit">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </button>
+                    </form>
                 </header>
             </div>
             <div>
