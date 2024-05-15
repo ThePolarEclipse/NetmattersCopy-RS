@@ -65,6 +65,25 @@ footer ul li {
 img {
 	border: 0;
 }
+.btn {
+    height: auto;
+    line-height: 35px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 1.063rem;
+    border-radius: 3px;
+    white-space: normal;
+}
+.hamburger{
+    color: #fff;
+    background-color: #333645;
+    border-color: #333645;
+    height: 46px;
+    width: 33px;
+    border-width: 0;
+    margin-left: 20px;
+
+}
 
 img[src*="logo"] {
 	width: 50vw;
