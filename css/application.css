@@ -13,9 +13,15 @@ footer ul li { font-size: .8125rem; line-height: 1.375rem; }
 
 .footer-bottom { margin: 20px 0 0; background: #212330; }
 
+.article-list { display: flex; flex-flow: column wrap; flex-direction: column; }
+
+.article-list img { object-fit: cover; max-width: 100%; }
+
+.article-item { border: 1px solid grey; margin-top: 1.825rem; }
+
 .container { display: flex; padding: .8125rem .8125rem; flex-direction: column; }
 
-.row { display: grid; grid-template-columns: auto auto auto; padding: 1.8125rem .8125rem; }
+.row { display: flex; grid-template-columns: auto auto auto; padding: 1.8125rem .8125rem; }
 
 .mobile { margin-left: auto; justify-self: center; }
 
@@ -54,3 +60,5 @@ footer ul li a { color: #fff; }
 footer ul li a:hover { color: #fff; }
 
 @media (min-width: 768px) { .mobile-priority, .icon-phone { display: none; } }
+
+@media (min-width: 768px) { .article-item { flex: 100%; } }
