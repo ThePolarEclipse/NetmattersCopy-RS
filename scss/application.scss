@@ -41,7 +41,8 @@ footer {
   background: #212330;
 }
 
-.article-list{
+.article-list,
+.services{
     display: flex;
     flex-flow: column wrap;
     flex-direction: column;
@@ -51,9 +52,22 @@ footer {
         max-width:100%;
     }
 }
-.article-item{
+.article-item,
+.service-item{
     border: 1px solid grey;
     margin-top: 1.825rem;
+}
+
+.service-item{
+    padding: 0.25rem;
+    display: flex;
+
+    .btn{
+        padding-top: flex-end;
+        align-items: flex-end;
+        background-color:orange;
+        color:white;
+    }
 }
 
 .container {
