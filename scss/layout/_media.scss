@@ -1,0 +1,17 @@
+@include respond-to(mobile) {
+  .mobile-priority,
+  .icon-phone {
+    display: none;
+  }
+
+  .article-item {
+    flex: 100%;
+  }
+}
+
+@include respond-to(tablet) {
+  .mobile .icon-phone {
+    font-size: 32px;
+    margin-left: 15px;
+  }
+}

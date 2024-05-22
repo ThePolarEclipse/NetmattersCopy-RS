@@ -1,0 +1,33 @@
+.icon-hamburger {
+  color: white;
+  @include icon("\e9bd");
+}
+
+.icon-facebook::before {
+  content: "\ea90";
+}
+
+.icon-linkedin::before {
+  content: "\eaca";
+}
+
+.icon-twitter::after {
+  content: "\ea96";
+}
+
+.icon-instagram::before {
+  content: "\ea92";
+}
+
+.icon-phone::before {
+  content: "\e900";
+}
+
+.icon-search::before {
+  content: "\e904";
+  font-size: 20px;
+}
+
+.icon-arrow-right::after {
+  content: "\ea3c";
+}

@@ -1,0 +1,53 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+a {
+  color: #333645;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+  &[src*="logo"] {
+    max-width: 60%;
+  }
+}
+
+#search-input {
+  width: 95%;
+  padding: 7px;
+}
+
+.search-form {
+  height: 47px;
+  padding: 5px 15px;
+  margin-top: 11px;
+  position: relative;
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+}
+
+[class^=icon-] {
+  font-family: "icomoon";
+  line-height: 1;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  text-transform: none;
+}

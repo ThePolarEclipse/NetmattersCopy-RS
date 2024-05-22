@@ -1,0 +1,25 @@
+.newsletter {
+  background-color: #ddd;
+
+  .newsletter-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+
+  .newsletter-input {
+    flex: 1 1 450px;
+    padding: 0 15px;
+  }
+
+  .newsletter-submit {
+    color: #fff;
+    background-color: #333645;
+    border: 0;
+  }
+
+  #newsletter-email,
+  #newsletter-name {
+    width: 100%;
+  }
+}

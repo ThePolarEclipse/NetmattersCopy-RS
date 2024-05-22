@@ -1,0 +1,35 @@
+header {
+  display: block;
+}
+
+footer {
+  background-color: #323544;
+  color: #fff;
+  margin: 10px 0 0;
+  position: relative;
+  display: block;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      font-size: 0.8125rem;
+      line-height: 1.375rem;
+
+      a {
+        color: #fff;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  margin: 20px 0 0;
+  background: #212330;
+}
