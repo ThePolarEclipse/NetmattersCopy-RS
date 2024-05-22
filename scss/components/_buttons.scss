@@ -37,6 +37,24 @@
     margin-right: 8px;
   }
 
+  &-contact {
+    @include button-styles(#999aa2);
+    border: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin: 10px 0;
+    margin-right: 8px;
+  }
+
+  &-support {
+    @include button-styles(#2a6ec6);
+    border: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin: 10px 0;
+    margin-right: 8px;
+  }
+
   &-wcu {
     @include button-styles($colour-why-choose-us);
     border-color: #926fb1;
@@ -77,9 +95,10 @@
   width: 33px;
   padding: 5px 15px;
   border-width: 0;
-  margin-left: 20px;
   border-color: #333645;
   border-radius: 10%;
   font-size: 1.438rem;
   line-height: 45px;
+  margin: 10px 0;
+  margin-right: 8px;
 }

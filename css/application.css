@@ -53,6 +53,10 @@ label.required::after, label .required::after { content: " *"; color: #d24d57; }
 
 .btn-mid-culture { background-color: #272936; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; border-radius: 6px; padding: 10px 30px; font-size: 20px; margin-top: 20px; margin-right: 8px; }
 
+.btn-contact { background-color: #999aa2; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; border: none; padding: 10px 30px; font-size: 20px; margin: 10px 0; margin-right: 8px; }
+
+.btn-support { background-color: #2a6ec6; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; border: none; padding: 10px 30px; font-size: 20px; margin: 10px 0; margin-right: 8px; }
+
 .btn-wcu { background-color: #926fb1; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; border-color: #926fb1; }
 
 .btn-software { background-color: #67809f; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; }
@@ -69,7 +73,7 @@ label.required::after, label .required::after { content: " *"; color: #d24d57; }
 
 .btn-developer-course { background-color: #ce4125; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; }
 
-.btn-burger { background-color: #333645; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; height: 46px; width: 33px; padding: 5px 15px; border-width: 0; margin-left: 20px; border-color: #333645; border-radius: 10%; font-size: 1.438rem; line-height: 45px; }
+.btn-burger { background-color: #333645; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; height: 46px; width: 33px; padding: 5px 15px; border-width: 0; border-color: #333645; border-radius: 10%; font-size: 1.438rem; line-height: 45px; margin: 10px 0; margin-right: 8px; }
 
 .article-list, .services { display: flex; flex-flow: column wrap; align-content: center; justify-content: center; flex-wrap: wrap; flex-direction: column; }
 
@@ -161,13 +165,15 @@ header div.container { background: #333645; }
 
 header .icon-phone { font-size: 2rem; }
 
-header form.search-form.mobile-priority, header .not-mobile { display: flex; border: hidden; }
+header form.search-form.mobile-priority { display: flex; }
+
+header .not-mobile { display: none; }
 
 header ul { display: flex; justify-content: space-around; flex-wrap: nowrap; list-style: none; text-transform: uppercase; }
 
 header ul li { position: relative; display: block; color: #fff; padding: 19px 0 18px; text-transform: uppercase; font-size: 1.125rem; text-decoration: none; line-height: 1; }
 
-header ul li a span { font-size: 2rem; }
+header ul li a span { font-size: 1.45rem; }
 
 footer { background-color: #323544; color: #fff; margin: 10px 0 0; position: relative; display: block; }
 
@@ -193,10 +199,10 @@ footer ul li a:hover { color: #fff; }
 
 .mobile { margin-left: auto; justify-self: center; }
 
-@media (min-width: 767px) { .mobile-priority, .icon-phone { display: none; }
-  .article-item { flex: 100%; }
-  not-mobile { display: block; } }
+@media (min-width: 767px) { .mobile-priority, .icon-phone { display: none !important; }
+  .not-mobile { display: flex !important; }
+  .article-item { flex: 100%; } }
 
 @media (min-width: 768px) and (max-width: 991px) { .mobile .icon-phone { margin-left: 15px; } }
 
-@media (max-width: 992px) { header > .container, .desktop-priority { display: none; } }
+@media (max-width: 992px) { header > .container, .desktop-priority { display: none !important; } }

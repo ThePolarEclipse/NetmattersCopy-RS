@@ -3,15 +3,14 @@
 
 @include respond-to(mobile) {
   .mobile-priority,
-  .icon-phone {
-    display: none;
+  .icon-phone{
+    display: none !important;
   }
-
+  .not-mobile{
+    display:flex !important;
+  }
   .article-item {
     flex: 100%;
-  }
-  not-mobile {
-    display: block;
   }
 }
 
@@ -29,6 +28,6 @@
   }
   header>.container,
   .desktop-priority{
-    display:none;
+    display:none !important;
   }
 }

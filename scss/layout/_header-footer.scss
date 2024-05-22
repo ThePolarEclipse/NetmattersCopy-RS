@@ -7,10 +7,11 @@ header {
     .icon-phone {
         font-size: 2rem;;
     }
-    form.search-form.mobile-priority,
-    .not-mobile{
+    form.search-form.mobile-priority{
         display: flex;
-        border: hidden ;
+    }
+    .not-mobile{
+        display: none;
     }
     ul{
         display: flex;
@@ -30,7 +31,7 @@ header {
             line-height: 1;
 
             a span{
-                font-size: 2rem;
+                font-size: 1.45rem;
             }
         }
     }
