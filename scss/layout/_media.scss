@@ -1,3 +1,6 @@
+//each of these is essentially checking if the page is NOT one of them. 
+//I've used 'mobile', 'tablet' and 'desktop' as names for the sake of avoiding confusion.
+
 @include respond-to(mobile) {
   .mobile-priority,
   .icon-phone {
@@ -7,11 +10,25 @@
   .article-item {
     flex: 100%;
   }
+  not-mobile {
+    display: block;
+  }
 }
 
 @include respond-to(tablet) {
   .mobile .icon-phone {
-    font-size: 32px;
+    //font-size: 32px;
     margin-left: 15px;
+  }
+}
+
+@include respond-to(desktop) {
+  .container {
+    //width: 970px;
+
+  }
+  header>.container,
+  .desktop-priority{
+    display:none;
   }
 }

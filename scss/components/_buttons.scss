@@ -1,7 +1,5 @@
-@import 'mixins';
-
 .btn {
-  @include button-styles(orange);
+  @include button-styles(#212330);
   
   &-google {
     @include button-styles($colour-google);
@@ -14,6 +12,24 @@
 
   &-trustpilot {
     @include button-styles($colour-trustpilot);
+    border-radius: 6px;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 8px;
+  }
+
+  &-mid-wcu {
+    @include button-styles($colour-mid-buttons);
+    border-radius: 6px;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 8px;
+  }
+
+  &-mid-culture {
+    @include button-styles($colour-mid-buttons);
     border-radius: 6px;
     padding: 10px 30px;
     font-size: 20px;

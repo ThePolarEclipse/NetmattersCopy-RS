@@ -31,3 +31,37 @@
 .icon-arrow-right::after {
   content: "\ea3c";
 }
+.icon-apps::before {
+    content: "\e957";
+    color: white;
+}
+
+.icon-display::before {
+    content: "\e956";
+    color: white;
+}
+
+.icon-bar-graph::before {
+    content: "\e901";
+    color: white;
+}
+
+.icon-phone-service::before {
+    content: "\e900";
+    color: white;
+}
+
+.icon-code::before {
+    content: "\ea80";
+    color: white;
+}
+
+.icon-security::before {
+    content: "\e903";
+    color: white;
+}
+
+.icon-school-cap::before {
+    content: "\e902";
+    color: white;
+}

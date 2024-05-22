@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face { font-family: "icomoon"; src: url(../fonts/icomoon.ttf); font-weight: 400; font-style: normal; font-display: swap; }
 
 @font-face { font-family: "Poppins"; src: url(../fonts/Poppins-Regular.ttf); font-weight: 400; font-style: normal; font-display: swap; }
@@ -22,20 +23,6 @@ img[src*="logo"] { max-width: 60%; }
 
 [class^=icon-] { font-family: "icomoon"; line-height: 1; font-style: normal; font-variant: normal; font-weight: 400; text-transform: none; }
 
-header { display: block; }
-
-footer { background-color: #323544; color: #fff; margin: 10px 0 0; position: relative; display: block; }
-
-footer ul { list-style: none; padding: 0; margin: 0; }
-
-footer ul li { font-size: 0.8125rem; line-height: 1.375rem; }
-
-footer ul li a { color: #fff; }
-
-footer ul li a:hover { color: #fff; }
-
-.footer-bottom { margin: 20px 0 0; background: #212330; }
-
 .newsletter { background-color: #ddd; }
 
 .newsletter .newsletter-wrapper { display: flex; flex-wrap: wrap; margin: 0 -15px; }
@@ -56,17 +43,33 @@ footer ul li a:hover { color: #fff; }
 
 label.required::after, label .required::after { content: " *"; color: #d24d57; }
 
-.btn { display: inline-block; height: auto; line-height: 35px; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; white-space: normal; color: white; text-align: center; cursor: pointer; vertical-align: middle; }
+.btn { background-color: #212330; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; }
 
-.btn-google { background: #4387f6; border-radius: 6px; padding: 10px 30px; font-size: 20px; margin-top: 20px; margin-right: 8px; }
+.btn-google { background-color: #4387f6; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; border-radius: 6px; padding: 10px 30px; font-size: 20px; margin-top: 20px; margin-right: 8px; }
 
-.btn-trustpilot { background: #00b67b; border-radius: 6px; padding: 10px 30px; font-size: 20px; margin-top: 20px; margin-right: 8px; }
+.btn-trustpilot { background-color: #00b67b; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; border-radius: 6px; padding: 10px 30px; font-size: 20px; margin-top: 20px; margin-right: 8px; }
 
-.btn-wcu { background-color: #926fb1; border-color: #926fb1; }
+.btn-mid-wcu { background-color: #272936; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; border-radius: 6px; padding: 10px 30px; font-size: 20px; margin-top: 20px; margin-right: 8px; }
 
-.btn-container { display: block; }
+.btn-mid-culture { background-color: #272936; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; border-radius: 6px; padding: 10px 30px; font-size: 20px; margin-top: 20px; margin-right: 8px; }
 
-.btn-burger { background-color: #333645; height: 46px; width: 33px; padding: 5px 15px; border-width: 0; margin-left: 20px; border-color: #333645; border-radius: 10%; font-size: 1.438rem; line-height: 45px; }
+.btn-wcu { background-color: #926fb1; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; border-color: #926fb1; }
+
+.btn-software { background-color: #67809f; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; }
+
+.btn-it { background-color: #4183d7; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; }
+
+.btn-digital { background-color: #2ecc71; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; }
+
+.btn-telecoms { background-color: #d64541; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; }
+
+.btn-web { background-color: #926fb1; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; }
+
+.btn-security { background-color: #f62459; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; }
+
+.btn-developer-course { background-color: #ce4125; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; }
+
+.btn-burger { background-color: #333645; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; height: 46px; width: 33px; padding: 5px 15px; border-width: 0; margin-left: 20px; border-color: #333645; border-radius: 10%; font-size: 1.438rem; line-height: 45px; }
 
 .article-list, .services { display: flex; flex-flow: column wrap; align-content: center; justify-content: center; flex-wrap: wrap; flex-direction: column; }
 
@@ -96,45 +99,15 @@ label.required::after, label .required::after { content: " *"; color: #d24d57; }
 
 .service-item .icon span { font-size: 2rem; line-height: 62px; }
 
-.service-item .icon-apps::before { content: "\e957"; color: white; }
-
-.service-item .icon-display::before { content: "\e956"; color: white; }
-
-.service-item .icon-bar-graph::before { content: "\e901"; color: white; }
-
-.service-item .icon-phone-service::before { content: "\e900"; color: white; }
-
-.service-item .icon-code::before { content: "\ea80"; color: white; }
-
-.service-item .icon-security::before { content: "\e903"; color: white; }
-
-.service-item .icon-school-cap::before { content: "\e902"; color: white; }
-
 .service-item .h2 { font-size: 1.3rem; position: relative; padding-bottom: 10px; margin: 0 0 11px; }
 
 .service-item .p { font-size: 0.8125rem; line-height: 1.375rem; margin-bottom: 13px; padding: 0 15px 10px 15px; font-weight: 400; }
 
 .service-item .btn-container { display: block; }
 
-.service-item .btn { align-items: flex-end; background-color: orange; color: white; display: inline-block; margin-bottom: 20px; }
-
-.service-item .btn-software { background: #67809f; }
-
-.service-item .btn-it { background-color: #4183d7; }
-
-.service-item .btn-digital { background-color: #2ecc71; }
-
-.service-item .btn-telecoms { background-color: #d64541; }
-
-.service-item .btn-web { background-color: #926fb1; }
-
-.service-item .btn-security { background-color: #f62459; }
-
-.service-item .btn-developer-course { background-color: #ce4125; }
-
 .icon-hamburger { color: white; }
 
-.icon-hamburger::before { font-family: "icomoon"; content: "\e9bd"; }
+.icon-hamburger::before { font-family: "icomoon"; content: ""; }
 
 .icon-facebook::before { content: "\ea90"; }
 
@@ -150,17 +123,19 @@ label.required::after, label .required::after { content: " *"; color: #d24d57; }
 
 .icon-arrow-right::after { content: "\ea3c"; }
 
-.container { display: flex; padding: 0.8125rem; flex-direction: column; }
+.icon-apps::before { content: "\e957"; color: white; }
 
-.container h2 { font-size: 2rem; }
+.icon-display::before { content: "\e956"; color: white; }
 
-.row { display: flex; grid-template-columns: auto auto auto; padding: 1.8125rem 0.8125rem; }
+.icon-bar-graph::before { content: "\e901"; color: white; }
 
-.center { align-items: center; text-align: center; }
+.icon-phone-service::before { content: "\e900"; color: white; }
 
-.middle { color: white; background: #323544; }
+.icon-code::before { content: "\ea80"; color: white; }
 
-.mobile { margin-left: auto; justify-self: center; }
+.icon-security::before { content: "\e903"; color: white; }
+
+.icon-school-cap::before { content: "\e902"; color: white; }
 
 .tick-text { line-height: 32px; font-weight: 600; display: table-cell; }
 
@@ -180,7 +155,48 @@ label.required::after, label .required::after { content: " *"; color: #d24d57; }
 
 #banner .content .h1 { font-size: 2.5rem; line-height: 3rem; margin: 0 0 1.25rem; font-weight: 600; }
 
-@media (min-width: 768px) { .mobile-priority, .icon-phone { display: none; }
-  .article-item { flex: 100%; } }
+header { display: block; }
 
-@media (max-width: 991px) { .mobile .icon-phone { font-size: 32px; margin-left: 15px; } }
+header div.container { background: #333645; }
+
+header .icon-phone { font-size: 2rem; }
+
+header form.search-form.mobile-priority, header .not-mobile { display: flex; border: hidden; }
+
+header ul { display: flex; justify-content: space-around; flex-wrap: nowrap; list-style: none; text-transform: uppercase; }
+
+header ul li { position: relative; display: block; color: #fff; padding: 19px 0 18px; text-transform: uppercase; font-size: 1.125rem; text-decoration: none; line-height: 1; }
+
+header ul li a span { font-size: 2rem; }
+
+footer { background-color: #323544; color: #fff; margin: 10px 0 0; position: relative; display: block; }
+
+footer ul { list-style: none; padding: 0; margin: 0; }
+
+footer ul li { font-size: 0.8125rem; line-height: 1.375rem; }
+
+footer ul li a { color: #fff; }
+
+footer ul li a:hover { color: #fff; }
+
+.footer-bottom { margin: 20px 0 0; background: #212330; }
+
+.container { display: flex; padding: 0.8125rem; flex-direction: column; }
+
+.container h2 { font-size: 2rem; }
+
+.row { display: flex; grid-template-columns: auto auto auto; padding: 1.8125rem 0.8125rem; }
+
+.center { align-items: center; text-align: center; }
+
+.middle { color: white; background: #323544; }
+
+.mobile { margin-left: auto; justify-self: center; }
+
+@media (min-width: 767px) { .mobile-priority, .icon-phone { display: none; }
+  .article-item { flex: 100%; }
+  not-mobile { display: block; } }
+
+@media (min-width: 768px) and (max-width: 991px) { .mobile .icon-phone { margin-left: 15px; } }
+
+@media (max-width: 992px) { header > .container, .desktop-priority { display: none; } }
