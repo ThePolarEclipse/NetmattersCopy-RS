@@ -19,6 +19,9 @@
     //font-size: 32px;
     margin-left: 15px;
   }
+  .article-item{
+    max-width: 80%;
+  }
 }
 
 @include respond-to(desktop) {
@@ -59,4 +62,25 @@
   .footer-items{
       display: block !important;
   }
+  .middle {
+      color: white;
+      background: #323544;
+      flex-direction: column;
+      padding: 10px;
+
+      &-item{
+        margin: 20px 0;
+        width: 90%;
+      }
+}
+}
+
+//specifically for the third article item to be hidden
+@media (min-width: 992px) and (max-width: 1450px) {
+    .article-third{
+        display:none;
+    }
+    .article-list{
+        justify-content: center;
+    }
 }
