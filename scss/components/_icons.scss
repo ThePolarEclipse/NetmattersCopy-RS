@@ -65,3 +65,19 @@
     content: "\e902";
     color: white;
 }
+.icon-contact::before {
+    content: "\e907";
+    color: white;
+    padding-right: 7px;
+}
+
+.icon-support::before {
+    content: "\e906";
+    color: white;
+    padding-right: 7px;
+}
+.icon-star::before{
+    font-size: 50px;
+    content: "\e9d9";
+    color: orange;
+}

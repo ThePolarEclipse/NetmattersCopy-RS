@@ -21,7 +21,7 @@ img[src*="logo"] { max-width: 60%; }
 
 #search-input { width: 95%; padding: 7px; }
 
-.search-form { height: 47px; padding: 5px 15px; margin-top: 11px; position: relative; border-radius: 2px; font-size: 14px; line-height: 1.42857143; color: #555; }
+.search-form { display: flex; height: 47px; padding: 5px 15px; margin-top: 11px; position: relative; border-radius: 2px; font-size: 14px; line-height: 1.42857143; color: #555; }
 
 [class^=icon-] { font-family: "icomoon"; line-height: 1; font-style: normal; font-variant: normal; font-weight: 400; text-transform: none; }
 
@@ -55,9 +55,9 @@ label.required::after, label .required::after { content: " *"; color: #d24d57; }
 
 .btn-mid-culture { background-color: #272936; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; border-radius: 6px; padding: 10px 30px; font-size: 20px; margin-top: 20px; margin-right: 8px; }
 
-.btn-contact { background-color: #999aa2; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; border: none; padding: 10px 30px; font-size: 20px; margin: 10px 0; margin-right: 8px; }
+.btn-contact { background-color: #999aa2; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; border: none; padding: 15px 25px; padding-left: 15px; font-size: 20px; margin: 10px 0; margin-right: 8px; }
 
-.btn-support { background-color: #2a6ec6; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; border: none; padding: 10px 30px; font-size: 20px; margin: 10px 0; margin-right: 8px; }
+.btn-support { background-color: #2a6ec6; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; border: none; padding: 15px 25px; padding-left: 15px; font-size: 20px; margin: 10px 0; margin-right: 8px; }
 
 .btn-wcu { background-color: #926fb1; color: white; display: inline-block; padding: 5px 15px; text-transform: uppercase; font-size: 1.063rem; border-radius: 3px; text-align: center; cursor: pointer; vertical-align: middle; border-color: #926fb1; padding: 20px 10px; }
 
@@ -173,6 +173,12 @@ label.required::after, label .required::after { content: " *"; color: #d24d57; }
 
 .icon-school-cap::before { content: "\e902"; color: white; }
 
+.icon-contact::before { content: "\e907"; color: white; padding-right: 7px; }
+
+.icon-support::before { content: "\e906"; color: white; padding-right: 7px; }
+
+.icon-star::before { font-size: 50px; content: "\e9d9"; color: orange; }
+
 .tick-text { line-height: 32px; font-weight: 600; display: table-cell; }
 
 .client-quote { font-weight: 600; font-size: 1.3rem; font-style: italic; }
@@ -198,8 +204,6 @@ header div.container { background: #333645; }
 header .icon-phone { font-size: 2rem; }
 
 header form.search-form.mobile-priority { display: flex; }
-
-header .not-mobile { display: none; }
 
 header ul { display: flex; justify-content: space-around; flex-wrap: nowrap; list-style: none; text-transform: uppercase; }
 
@@ -236,7 +240,6 @@ footer ul li a:hover { color: #fff; }
 .mobile { margin-left: auto; justify-self: center; }
 
 @media (min-width: 767px) { .mobile-priority, .icon-phone { display: none !important; }
-  .not-mobile { display: flex !important; }
   .article-item { flex: 100%; } }
 
 @media (min-width: 768px) and (max-width: 991px) { .mobile .icon-phone { margin-left: 15px; }
@@ -252,3 +255,5 @@ footer ul li a:hover { color: #fff; }
 
 @media (min-width: 992px) and (max-width: 1450px) { .article-third { display: none; }
   .article-list { justify-content: center; } }
+
+@media (min-width: 0px) and (max-width: 802px) { .not-mobile { display: none; } }

@@ -13,11 +13,11 @@
                     <img src="images/netmatters-logo.png" alt="Netmatters">
                     <a class="mobile" href="#"><span class="icon-phone"></span></a>
                     <button type="button" class="btn-support desktop-priority"><span class="icon-support">SUPPORT</span></button>
-                    <button type="button" class="btn-contact desktop-priority"><span class="icon-Contact">CONTACT</span></button>
+                    <button type="button" class="btn-contact desktop-priority"><span class="icon-contact">CONTACT</span></button>
                     <form method="GET" action="#" accept-charset="UTF-8" class="search-form not-mobile">
                         <label for="search-input" class="hidden">Search:</label>
                         <input class="form-control search-bar" placeholder="Search..." id="search-input-top" name="keyword" type="text" value="">
-                        <button type="submit" id="search-submit">
+                        <button type="submit" class="search-submit">
                             <span class="icon-search"></span>
                         </button>
                     </form>
@@ -26,7 +26,7 @@
                 <form method="GET" action="#" accept-charset="UTF-8" class="search-form mobile-priority">
                     <label for="search-input" class="hidden">Search:</label>
                     <input class="form-control search-bar" placeholder="Search..." id="search-input" name="keyword" type="text" value="">
-                    <button type="submit" id="search-submit">
+                    <button type="submit" class="search-submit">
                         <span class="icon-search"></span>
                     </button>
                 </form>
@@ -103,7 +103,10 @@
                 <div id="main-content">
                     <!-- Services -->
                     <div class="container">
-                        <h2><strong>Our Services</strong></h2>
+                        <div class="row">
+                            <h2><strong>Our Services</strong></h2>
+                            <h3 class="not-mobile"><a href="#">View Our Work <em class="icon-arrow-right"></em></a></h3>
+                        </div>
                         <div class="services">
                             <div class="service-item">
                                 <div class="software">
@@ -226,9 +229,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="services-view-all visible-xs">
-                        <h3 class="center"><a href="/case-studies">View Our Work <em class="icon-arrow-right"></em></a></h3>
-                    </div>
+                    <h3 class="center mobile-priority"><a href="/case-studies">View Our Work <em class="icon-arrow-right"></em></a></h3>
                     <div class="container middle">
                         <div class="middle-item">
                             <div>
@@ -243,14 +244,16 @@
                             </div>
                         </div>
                         <div class="middle-item">
-                        <div>
-                            <h2>What Our Clients Think</h2>
-                        </div>
-                            <div class="star"></div>
-                            <div class="star"></div>
-                            <div class="star"></div>
-                            <div class="star"></div>
-                            <div class="star"></div>
+                            <div>
+                                <h2>What Our Clients Think</h2>
+                            </div>
+                            <div class="row">
+                                <div class="icon-star"></div>
+                                <div class="icon-star"></div>
+                                <div class="icon-star"></div>
+                                <div class="icon-star"></div>
+                                <div class="icon-star"></div>
+                            </div>
                             <p class="client-quote">Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</p>
                             <p><span class="client-quote-author">Eleanor Bishop, Head of Marketing - <a href="#">Ashcroft Partnership LLP</a></span></p>
                             <div>
@@ -270,7 +273,7 @@
                             <div class="article-item">
                                 <a class="article-link" href="#"></a>   
                                 <a href="#" class="careers article-type" title="View all: IT Support / Careers">Careers</a>
-                                <div article-image>
+                                <div class="article-image">
                                     <img src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/2nd-line-technician-Rnd7.jpg" alt="">
                                 </div>
                                 <div class="article-bottom">
@@ -292,7 +295,7 @@
                             <div class="article-item">
                                 <a class="article-link" href="#"></a>
                                 <a href="#" class="news article-type" title="View all: Telecoms Services / News">News</a>
-                                <div article-image>
+                                <div class="article-image">
                                     <img src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/joe-trower-8QGl.png" alt="">
                                 </div>
                                 <div class="article-bottom">
@@ -314,7 +317,7 @@
                             <div class="article-item article-third">
                                 <a class="article-link" href="#"></a>
                                 <a href="#" class="notable article-type" title="View all: Business Development / News"> News</a>
-                                <div article-image>
+                                <div class="article-image">
                                     <img src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/april-notables-2024-aFQs.png" alt="">
                                 </div>
                                 <div class="article-bottom">

@@ -6,9 +6,6 @@
   .icon-phone{
     display: none !important;
   }
-  .not-mobile{
-    display:flex !important;
-  }
   .article-item {
     flex: 100%;
   }
@@ -82,5 +79,12 @@
     }
     .article-list{
         justify-content: center;
+    }
+}
+
+//for the top "view our work" part of "our services" and also the top search bar
+@media (min-width: 0px) and (max-width: 802px){
+    .not-mobile{
+        display:none;
     }
 }
