@@ -44,6 +44,11 @@ footer {
   position: relative;
   display: block;
 
+  .footer-items{
+      display: flex;
+      justify-content: space-around;
+  }
+
   ul {
     list-style: none;
     padding: 0;

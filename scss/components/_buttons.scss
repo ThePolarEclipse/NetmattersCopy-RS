@@ -58,6 +58,7 @@
   &-wcu {
     @include button-styles($colour-why-choose-us);
     border-color: #926fb1;
+    padding: 20px 10px;
   }
 
   &-software {
