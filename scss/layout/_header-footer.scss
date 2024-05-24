@@ -1,3 +1,8 @@
+#header-banner{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
 header {
     display: block;
 
@@ -10,6 +15,32 @@ header {
     form.search-form.mobile-priority{
         display: flex;
     }
+    &-banner-item{
+        display:flex;
+    }
+    #search-input {
+      width: 95%;
+      padding: 7px;
+    }
+
+    .search-form {
+      display: flex;
+      height: 55px;
+      padding:0 10px 0 0;
+      margin: 10px 0;
+      position: relative;
+      border-radius: 2px;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #555;
+  
+      .search-bar{
+          padding: 7px 2px;
+      }
+      search-btn-big{
+    
+      }
+    }
     ul{
         display: flex;
         justify-content: space-around;
@@ -17,18 +48,24 @@ header {
         list-style: none;
         text-transform: uppercase;
 
-        li{
+        li div{
             position: relative;
-            display: block;
-            color: #fff;
+            display: flex;
             padding: 19px 0 18px;
             text-transform: uppercase;
             font-size: 1.125rem;
             text-decoration: none;
             line-height: 1;
+            flex-direction: column;
+            align-items: center;
 
-            a span{
+            span{
                 font-size: 1.45rem;
+            }
+            p {
+                color: #fff !important;
+                margin: 0 auto;
+                
             }
         }
     }
@@ -42,6 +79,7 @@ footer {
   display: block;
 
   .footer-items{
+        width: 100%;
       display: flex;
       justify-content: space-around;
   }

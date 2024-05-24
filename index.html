@@ -16,7 +16,7 @@
                     <button type="button" class="btn-contact desktop-priority"><span class="icon-contact">CONTACT</span></button>
                     <form method="GET" action="#" accept-charset="UTF-8" class="search-form not-mobile">
                         <label for="search-input" class="hidden">Search:</label>
-                        <input class="form-control search-bar" placeholder="Search..." id="search-input-top" name="keyword" type="text" value="">
+                        <input class="search-bar" placeholder="Search..." id="search-input-top" name="keyword" type="text" value="">
                         <button type="submit" class="search-submit">
                             <span class="icon-search"></span>
                         </button>
@@ -25,54 +25,61 @@
                 </div>
                 <form method="GET" action="#" accept-charset="UTF-8" class="search-form mobile-priority">
                     <label for="search-input" class="hidden">Search:</label>
-                    <input class="form-control search-bar" placeholder="Search..." id="search-input" name="keyword" type="text" value="">
-                    <button type="submit" class="search-submit">
+                    <input class="search-bar" placeholder="Search..." id="search-input" name="keyword" type="text" value="">
+                    <button type="submit" class="search-btn-big">
                         <span class="icon-search"></span>
                     </button>
                 </form>
                 <div class="container">
                     <ul id="header-banner">
                         <li>
-                            <a href="#">
-                                <span class="icon-apps"></span>
-                                <br><small>Bespoke</small><br>software
-                            </a>
+                            <div class="header-banner-item">
+                                <span class="icon-apps_colour"></span>
+                                <p><small>Bespoke</small></p>
+                                <p>software</p>
+                            </div>
                         </li>
                         <li>
-                            <a href="#">
-                                <span class="icon-display"></span>
-                                <br><small>It</small><br>support
-                            </a>
+                            <div class="header-banner-item">
+                                <span class="icon-display_colour"></span>
+                                <p><small>It</small></p>
+                                <p>support</p>
+                            </div>
                         </li>
                         <li>
-                            <a href="#">
-                                <span class="icon-bar-graph"></span>
-                                <br><small>It</small><br>support
-                            </a>
+                            <div class="header-banner-item">
+                                <span class="icon-bar-graph_colour"></span>
+                                <p><small>digital</small></p>
+                                <p>marketing</p>
+                            </div>
                         </li>
                         <li>
-                            <a href="#">
-                                <span class="icon-phone-service"></span>
-                                <br><small>It</small><br>support
-                            </a>
+                            <div class="header-banner-item">
+                                <span class="icon-phone-service_colour"></span>
+                                <p><small>telecoms</small></p>
+                                <p>services</p>
+                            </div>
                         </li>
                         <li>
-                            <a href="#">
-                                <span class="icon-code"></span>
-                                <br><small>It</small><br>support
-                            </a>
+                            <div class="header-banner-item">
+                                <span class="icon-code_colour"></span>
+                                <p><small>web</small></p>
+                                <p>design</p>
+                            </div>
                         </li>
                         <li>
-                            <a href="#">
-                                <span class="icon-security"></span>
-                                <br><small>It</small><br>support
-                            </a>
+                            <div class="header-banner-item">
+                                <span class="icon-security_colour"></span>
+                                <p><small>cyber</small></p>
+                                <p>security</p>
+                            </div>
                         </li>
                         <li>
-                            <a href="#">
-                                <span class="icon-school-cap"></span>
-                                <br><small>It</small><br>support
-                            </a>
+                            <div class="header-banner-item">
+                                <span class="icon-school-cap_colour"></span>
+                                <p><small>developer</small></p>
+                                <p>course</p>
+                            </div>
                         </li>
                     
                     </ul>
@@ -103,8 +110,9 @@
                 <div id="main-content">
                     <!-- Services -->
                     <div class="container">
-                        <div class="row">
+                        <div class="row-service">
                             <h2><strong>Our Services</strong></h2>
+                            <div class="not-mobile service-gap"></div>
                             <h3 class="not-mobile"><a href="#">View Our Work <em class="icon-arrow-right"></em></a></h3>
                         </div>
                         <div class="services">
@@ -385,7 +393,7 @@
         </div>
         <div id="container">
             <footer>
-                <div class="container">
+                <div class="container-footer">
                     <div class="footer-logo">
                         <picture>
                             <source srcset="images/nm-logo-white-med.webp" type="image/webp">

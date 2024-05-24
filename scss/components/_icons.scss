@@ -31,40 +31,84 @@
 .icon-arrow-right::after {
   content: "\ea3c";
 }
-.icon-apps::before {
-    content: "\e957";
-    color: white;
+
+[class^="icon-apps"] {
+    &::before {
+        content: "\e957";
+        color: white;
+    }
+
+    &.icon-apps_colour::before {
+        color: $colour-software;
+    }
 }
 
-.icon-display::before {
-    content: "\e956";
-    color: white;
+[class^="icon-display"] {
+    &::before {
+        content: "\e956";
+        color: white;
+    }
+
+    &.icon-display_colour::before {
+        color: $colour-display;
+    }
 }
 
-.icon-bar-graph::before {
-    content: "\e901";
-    color: white;
+[class^="icon-bar-graph"] {
+    &::before {
+        content: "\e901";
+        color: white;
+    }
+
+    &.icon-bar-graph_colour::before {
+        color: $colour-digital;
+    }
 }
 
-.icon-phone-service::before {
-    content: "\e900";
-    color: white;
+[class^="icon-phone-service"] {
+    &::before {
+        content: "\e900";
+        color: white;
+    }
+
+    &.icon-phone-service_colour::before {
+        color: $colour-telecoms;
+    }
 }
 
-.icon-code::before {
-    content: "\ea80";
-    color: white;
+[class^="icon-code"] {
+    &::before {
+        content: "\ea80";
+        color: white;
+    }
+
+    &.icon-code_colour::before {
+        color: $colour-web;
+    }
 }
 
-.icon-security::before {
-    content: "\e903";
-    color: white;
+[class^="icon-security"] {
+    &::before {
+        content: "\e903";
+        color: white;
+    }
+
+    &.icon-security_colour::before {
+        color: $colour-security;
+    }
 }
 
-.icon-school-cap::before {
-    content: "\e902";
-    color: white;
+[class^="icon-school-cap"] {
+    &::before {
+        content: "\e902";
+        color: white;
+    }
+
+    &.icon-school-cap_colour::before {
+        color: $colour-developer-course;
+    }
 }
+
 .icon-contact::before {
     content: "\e907";
     color: white;
