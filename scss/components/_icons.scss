@@ -1,6 +1,7 @@
-.icon-hamburger {
-  color: white;
-  @include icon("\e9bd");
+.icon-hamburger::before {
+    color: white;
+    content: "\e9bd";
+    font-size: 44px;
 }
 
 .icon-facebook::before {

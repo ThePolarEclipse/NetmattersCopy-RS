@@ -12,8 +12,7 @@
 }
 
 @include respond-to(tablet) {
-  .mobile .icon-phone {
-    //font-size: 32px;
+  .icon-phone {
     margin-left: 15px;
   }
   .article-item{
@@ -83,8 +82,16 @@
 }
 
 //for the top "view our work" part of "our services" and also the top search bar
-@media (min-width: 0px) and (max-width: 802px){
+@media (min-width: 0px) and (max-width: 766px){
     .not-mobile{
+        display:none;
+    }
+}
+
+//for the search bar at the very top of the page
+@media (min-width: 991px) and (max-width: 1159px),
+       (max-width: 766px){
+    #search-input-top{
         display:none;
     }
 }
