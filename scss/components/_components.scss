@@ -59,3 +59,16 @@
     }
   }
 }
+.row-partners{
+    display:flex;
+    overflow-x: hidden;
+
+    img{
+        padding: 4rem 2.5rem 3rem 2.5rem;
+        filter: grayscale(1);
+
+        &:hover{
+            filter: grayscale(0);
+        }
+    }
+}
