@@ -89,18 +89,44 @@
 }
 .article-item,
 .service-item {
-  border: 1px solid #ccc;
-  margin-top: 1.825rem;
-  max-width: 455px;
-  box-shadow: 4px 3px 20px 0px #ccc;
+    position: relative;
+    top: 0px;
+    transition: .5s ease;
+    
+    border: 1px solid #ccc;
+    margin-top: 1.825rem;
+    max-width: 455px;
+    box-shadow: 4px 3px 20px 0px #ccc;
+
+    &:hover {
+        top: -10px;  
+        transition: .5s ease;
+    }
 }
 
-.service-item > div {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
+.service-item {
+    //colour changing for when hovering over a service item.
+    &:hover {
+        color: white;
+        span.btn-container span{
+            background-color: white;
+        }
+        @include elementStyles('.software', $colour-software);
+        @include elementStyles('.display', $colour-display);
+        @include elementStyles('.digital', $colour-digital);
+        @include elementStyles('.telecoms', $colour-telecoms);
+        @include elementStyles('.web', $colour-web);
+        @include elementStyles('.security', $colour-security);
+        @include elementStyles('.developer-course', $colour-developer-course);
+    }
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+    }
 }
 
 .service-gap{

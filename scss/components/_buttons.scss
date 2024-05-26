@@ -1,6 +1,30 @@
+.darken:hover{
+    transition: filter 0.15s ease;
+    filter: brightness(80%);
+}
+
+.hover{
+    &-facebook:hover{
+        background-color: #3b5998;
+    }
+    &-instagram:hover{
+        background-color: #d93175;
+    }
+    &-linkedin:hover{
+        background-color: #0077b5;
+    }
+    &-twitter:hover{
+        background-color: #00aced;
+    }
+}
+
+.underline:hover{
+    text-decoration: underline;
+}
+
 .btn {
   @include button-styles(#212330);
-  
+
   &-google {
     @include button-styles($colour-google);
     border-radius: 6px;
@@ -89,6 +113,42 @@
 
   &-developer-course {
     @include button-styles($colour-developer-course);
+  }
+
+  &-cookies{
+    position: fixed;
+    line-height: 22px;
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background: #75788a;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+    border: solid #75788a;
+    border-width: 1px 1px 0 0;
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: .8rem;
+  }
+  &-chat{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 99;
+    cursor: pointer;
+    font-size: 29px;
+    padding: 13px;
+    border: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    box-shadow:0 3px 35px rgba(0, 0, 0, .1);
   }
 }
 

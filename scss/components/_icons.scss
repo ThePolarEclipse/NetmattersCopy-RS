@@ -3,7 +3,9 @@
     content: "\e9bd";
     font-size: 44px;
 }
-
+.icon-chat::after{
+    content: "\e905";
+}
 .icon-facebook::before {
   content: "\ea90";
 }

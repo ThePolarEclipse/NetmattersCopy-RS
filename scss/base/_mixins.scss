@@ -11,6 +11,26 @@
   vertical-align: middle;
 }
 
+@mixin elementStyles($element, $color) {
+  &:has(#{$element}) {
+    background-color: $color;
+  }
+
+  #{$element} {
+    & > span.icon {
+      background-color: white;
+
+      & span::before {
+        color: $color;
+      }
+    }
+
+    span.btn-container span {
+      color: $color;
+    }
+  }
+}
+
 @mixin icon($content) {
   &::before {
     font-family: "icomoon";

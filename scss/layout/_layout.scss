@@ -12,6 +12,10 @@
   h2 {
     font-size: 2rem;
   }
+
+  &:has(ul#header-banner){
+    padding:0 3rem 0 3rem;
+  }
 }
 
 .row {
