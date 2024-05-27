@@ -31,6 +31,58 @@
   font-size: 20px;
 }
 
+.icon-drop::before{
+    font-family: "icomoon";
+    padding-right: 10px;
+}
+$icons: (
+    "cog": "\e90c",
+    "mob": "\e958",
+    "download": "\e9c7",
+    "cloud": "\e9c1",
+    "briefcase": "\e90d",
+    "folder": "\e930",
+    "group": "\e90f",
+    "clouddown": "\e90b",
+    "shuffle": "\e908",
+    "arrows": "\e909",
+    "laptop": "\e90e",
+    "globe": "\e90a",
+    "cap": "\e902",
+    "drive": "\e910",
+    "hphone": "\e911",
+    "search": "\e904",
+    "email": "\e913",
+    "dollar": "\e912",
+    "rising": "\e915",
+    "pencil": "\e914",
+    "ticket": "\e939",
+    "speedometer": "\e918",
+    "phonenoring": "\e942",
+    "shake": "\e916",
+    "phoneback": "\e917",
+    "phonecall": "\e900",
+    "display": "\e956",
+    "cart": "\e919",
+    "megaphone": "\e91a",
+    "shield": "\e903",
+    "paper": "\e91b",
+    "clock": "\e91d",
+    "flask": "\e91e",
+    "padlock": "\e91c",
+    "code": "\ea80",
+    "question": "\e91f"
+);
+
+.icon-drop {
+    @each $name, $content in $icons {
+        &-#{$name}::before {
+            content: $content;
+        }
+    }
+}
+
+
 .icon-arrow-right::after {
   content: "\ea3c";
 }

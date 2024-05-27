@@ -1,7 +1,9 @@
 #header-banner{
+    display:inline-flex;
     width: 100%;
     margin: 0 auto;
     padding: 0;
+    cursor: pointer;
 }
 header {
     display: block;
@@ -58,26 +60,155 @@ header {
         flex-wrap: nowrap;
         list-style: none;
         text-transform: uppercase;
+        
 
-        li div{
-            position: relative;
-            display: flex;
-            padding: 19px 0 18px;
-            text-transform: uppercase;
-            font-size: 1.125rem;
-            text-decoration: none;
-            line-height: 1;
-            flex-direction: column;
-            align-items: center;
+        li {
+            width: 153px;
+            div{
+                position: relative;
+                display: flex;
+                padding: 19px 0 18px;
+                text-transform: uppercase;
+                font-size: 1.125rem;
+                text-decoration: none;
+                line-height: 1;
+                flex-direction: column;
+                align-items: center;
 
-            span{
-                font-size: 1.45rem;
-            }
-            p {
-                color: #fff !important;
-                margin: 0 auto;
+                span{
+                    font-size: 1.45rem;
+                }
+                p {
+                    color: #fff !important;
+                    margin: 0 auto;
                 
+                }
             }
+        }
+    }
+
+    //banner hover
+
+    
+    .header-sub-banner{
+        display:none;
+        color: white;
+        position: absolute;
+        
+        left: 0;
+        min-width: 100%;
+        z-index: 99;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        list-style: none;
+        text-align: left;
+        padding-left: 10px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-top: -15px;
+            list-style: none;
+            text-align: left;
+            padding: 0;
+
+            li{
+                width: 33%;
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+    .software{
+        background: darken($colour-software,10%);
+    }
+    .display{
+        background: darken($colour-display,10%);
+    }
+    .digital{
+        background: darken($colour-digital,10%);
+    }
+    .telecoms{
+        background: darken($colour-telecoms,10%);
+    }
+    .web{
+        background: darken($colour-web,10%);
+    }
+    .security{
+        background: darken($colour-security,10%);
+    }
+    .developer-course{
+        background: darken($colour-developer-course,10%);
+    }
+
+    li:hover {
+        
+        div span::before{
+            color:white !important;
+        }
+
+        .header-sub-banner{
+            display: flex;
+        }
+        &:has(div.software){
+            background:$colour-software;
+        }
+        &:has(div.display){
+            background:$colour-display;
+        }
+        &:has(div.digital){
+            background:$colour-digital;
+        }
+        &:has(div.telecoms){
+            background:$colour-telecoms;
+        }
+        &:has(div.web){
+            background:$colour-web;
+        }
+        &:has(div.security){
+            background:$colour-security;
+        }
+        &:has(div.developer-course){
+            background:$colour-developer-course;
+        }
+    }
+    .banner-item{
+        &:hover::before{
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -35px;
+            transform: translateX(-50%);
+            z-index: 100;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 35px 75px 0;
+        }
+        &_apps:hover::before{
+            border-color: $colour-software transparent transparent;
+        }
+        &_display:hover::before{
+            border-color: $colour-display transparent transparent;
+        }
+        &_digital:hover::before{
+            border-color: $colour-digital transparent transparent;
+        }
+        &_telecoms:hover::before{
+            border-color: $colour-telecoms transparent transparent;
+        }
+        &_web:hover::before{
+            border-color: $colour-web transparent transparent;
+        }
+        &_security:hover::before{
+            border-color: $colour-security transparent transparent;
+        }
+        &_developer-course:hover::before{
+            border-color: $colour-developer-course transparent transparent;
         }
     }
 }
