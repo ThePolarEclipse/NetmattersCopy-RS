@@ -164,16 +164,24 @@ $icons: (
     }
 }
 
-.icon-contact::before {
-    content: "\e907";
-    color: white;
-    padding-right: 7px;
+.icon-contact{
+    font-family: 'Poppins', sans-serif;
+    &::before {
+        font-family: "icomoon";
+        content: "\e907";
+        color: white;
+        padding-right: 7px;
+    }
 }
 
-.icon-support::before {
-    content: "\e906";
-    color: white;
-    padding-right: 7px;
+.icon-support{
+    font-family: 'Poppins', sans-serif;
+    &::before {
+        font-family: "icomoon";
+        content: "\e906";
+        color: white;
+        padding-right: 7px;
+    }
 }
 .icon-star::before{
     font-size: 50px;

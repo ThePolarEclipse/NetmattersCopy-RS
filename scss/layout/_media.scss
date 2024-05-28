@@ -101,6 +101,9 @@
     #search-input-top{
         display:none;
     }
+    .search-btn-big{
+        border-radius: 10% !important;
+    }
 }
 //grid changes when the page is half-way between mobile and desktop
 @media (min-width: 991px) and (max-width: 1159px){

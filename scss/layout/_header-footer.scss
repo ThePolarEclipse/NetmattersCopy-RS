@@ -56,8 +56,10 @@ header {
         background-color: white;
         outline: 1px solid hsla(0, 0%, 100%, .2);
         border: 2px solid rgba(0, 0, 0, .1);
-        colour: rgba(0, 0, 0, .1);
+        color: rgba(0, 0, 0, .1);
         padding-left:10px;
+        padding-right: 0;
+        margin: 0;
     }
     .mobile {
         display:flex;
@@ -70,19 +72,19 @@ header {
         padding:0 10px 0 0;
         margin: 10px 0;
         position: relative;
-        border-radius: 2px;
+        border-radius: 1px;
         font-size: 14px;
         line-height: 1.42857143;
         color: #555;
   
         .search-bar{
-            padding: 7px 2px;
+            padding: 26px 2px;
         }
         .search-btn-big{
             background-color: #999aa2;
             color:white;
             border: none;
-            border-radius: 10%;
+            border-radius: 0% 10% 10% 0%;
 
             & span::before{
                 font-size: 2.5rem;
@@ -256,11 +258,13 @@ footer {
   display: block;
 
   .footer-items{
-        width: 100%;
+      width: 100%;
       display: flex;
       justify-content: space-around;
   }
-
+  .container-footer-bottom{
+    align-items: start;
+  }
   ul {
     list-style: none;
     padding: 0;
