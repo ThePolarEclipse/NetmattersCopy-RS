@@ -5,11 +5,20 @@
     padding: 0;
     cursor: pointer;
 }
+.logo{
+    width:80%;
+    height:80%;
+    align-self:center;
+    margin-left:-40px;
+    
+}
 header {
     display: block;
 
     div.container {
         background:#333645;
+        width: 100vw !important;
+
     }
     .icon-phone {
         font-size: 2rem;;
@@ -20,9 +29,35 @@ header {
     &-banner-item{
         display:flex;
     }
-    #search-input {
-      width: 95%;
-      padding: 7px;
+    #form-big{
+        width: 125%;
+    }
+    #search-input{
+        background-color: rgba(0, 0, 0, .1);
+        outline: 1px solid hsla(0, 0%, 100%, .2);
+        border: 2px solid rgba(0, 0, 0, .1);
+        transition: none;
+        width: 100%;
+        padding: 7px;
+        padding-right: 40px;
+    }
+    #search-submit{
+        background: none;
+        border: none;
+        border: none;
+        color: #333645;
+        position: absolute;
+        right: 25px;
+        line-height: 47px;
+        font-size: 35px;
+        outline: none;
+    }
+    #search-input-top {
+        background-color: white;
+        outline: 1px solid hsla(0, 0%, 100%, .2);
+        border: 2px solid rgba(0, 0, 0, .1);
+        colour: rgba(0, 0, 0, .1);
+        padding-left:10px;
     }
     .mobile {
         display:flex;
@@ -63,7 +98,7 @@ header {
         
 
         li {
-            width: 153px;
+            width: 20%;
             div{
                 position: relative;
                 display: flex;
@@ -102,7 +137,7 @@ header {
         align-items: flex-start;
         list-style: none;
         text-align: left;
-        padding-left: 10px;
+        padding-left: 30px;
         padding-top: 50px;
         padding-bottom: 50px;
 

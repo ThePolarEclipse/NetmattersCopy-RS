@@ -30,11 +30,7 @@ img {
     border: 0;
     vertical-align: middle;
 
-    &[src*="logo"] {
-        height: 100%;
-        width: auto;
-        margin: 5px;
-    }
+    
 }
 
 [class^=icon-] {

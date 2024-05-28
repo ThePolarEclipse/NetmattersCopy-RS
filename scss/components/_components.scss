@@ -65,6 +65,8 @@
 
     img{
         padding: 4rem 2.5rem 3rem 2.5rem;
+        height:50%;
+        align-self: center;
         filter: grayscale(1);
 
         &:hover{

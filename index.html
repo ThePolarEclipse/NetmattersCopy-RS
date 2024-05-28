@@ -10,9 +10,9 @@
         <button type="button" class="btn-cookies btn">Manage Consent</button>
         <button type="button" class="btn-chat btn"><span class="icon-chat"></span></button>
         <div id="header">
-            <header>
+            <header class="container">
                 <div class="row">
-                    <img src="images/netmatters-logo.png" alt="Netmatters">
+                    <img src="images/netmatters-logo.png" alt="Netmatters" class="logo">
                     <a class="mobile" href="#"><span class="icon-phone"></span></a>
                     <button type="button" class="btn-support desktop-priority darken"><span class="icon-support">SUPPORT</span></button>
                     <button type="button" class="btn-contact desktop-priority darken"><span class="icon-contact">CONTACT</span></button>
@@ -25,10 +25,10 @@
                     </form>
                     <button type="button" class="btn-burger darken"><span class="icon-hamburger"></span></button>
                 </div>
-                <form method="GET" action="#" accept-charset="UTF-8" class="search-form mobile-priority">
+                <form method="GET" action="#" accept-charset="UTF-8" id="form-big" class="search-form mobile-priority">
                     <label for="search-input" class="hidden">Search:</label>
                     <input class="search-bar" placeholder="Search..." id="search-input" name="keyword" type="text" value="">
-                    <button type="submit" class="search-btn">
+                    <button type="submit" id="search-submit" class="search-btn">
                         <span class="icon-search"></span>
                     </button>
                 </form>
@@ -199,7 +199,7 @@
                             <h3 class="not-mobile underline"><a href="#">View Our Work <em class="icon-arrow-right"></em></a></h3>
                         </div>
                         <div class="services">
-                            <div class="service-item">
+                            <div class="service-item one">
                                 <div class="software">
                                     <span class="icon">
                                         <span class="icon-apps"></span>
@@ -214,7 +214,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="service-item">
+                            <div class="service-item two">
                                 <div class="display">
                                     <span class="icon">
                                         <span class="icon-display"></span>
@@ -231,7 +231,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="service-item">
+                            <div class="service-item three">
                                 <div class="digital">
                                     <span class="icon">
                                         <span class="icon-bar-graph"></span>
@@ -249,7 +249,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="service-item">
+                            <div class="service-item four">
                                 <div class="telecoms">
                                     <span class="icon">
                                         <span class="icon-phone-service"></span>
@@ -266,7 +266,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="service-item">
+                            <div class="service-item five">
                                 <div class="web">
                                     <span class="icon">
                                         <span class="icon-code"></span>
@@ -284,7 +284,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="service-item">
+                            <div class="service-item six">
                                 <div class="security">
                                     <span class="icon">
                                         <span class="icon-security"></span>
@@ -301,7 +301,7 @@
                                     </span>
                                 </div>
                             </div>
-                            <div class="service-item">
+                            <div class="service-item seven">
                                 <div class="developer-course">
                                     <span class="icon">
                                         <span class="icon-school-cap"></span>
@@ -514,9 +514,7 @@
                 <div class="container-footer">
                     <div class="footer-logo">
                         <picture>
-                            <source srcset="images/nm-logo-white-med.webp" type="image/webp">
-                            <source srcset="images/nm-logo-white-med.png" type="image/png">
-                            <img src="images/nm-logo-white-med.png" alt="Netmatters">
+                            <img src="images/nm-logo-white-med.png" alt="Netmatters" class="logo">
                         </picture>
                     </div>
                     <h4>Follow us on:</h4>
