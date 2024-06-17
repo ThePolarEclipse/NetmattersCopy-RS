@@ -62,15 +62,22 @@
 .row-partners{
     display:flex;
     overflow-x: hidden;
-
+    padding-top: 2.5rem;
+    padding-bottom: 0;
+ 
     img{
-        padding: 4rem 2.5rem 3rem 2.5rem;
-        height:50%;
-        align-self: center;
-        filter: grayscale(1);
+      padding: .5rem 2.5rem;
+      max-height: 70px;
+      width: auto !important;
 
-        &:hover{
-            filter: grayscale(0);
-        }
-    }
+      align-self: center;
+      filter: grayscale(1);
+
+      &:hover{
+          filter: grayscale(0);
+      }
+  }
+}
+.slick-track{
+  max-height: 100%;
 }

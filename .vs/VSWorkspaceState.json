@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\css",
+    "\\scss",
+    "\\scss\\components"
   ],
-  "SelectedNode": "\\scss",
   "PreviewInSolutionExplorer": false
 }
