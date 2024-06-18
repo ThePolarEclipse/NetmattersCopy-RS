@@ -1,0 +1,31 @@
+.slick-dots {
+    
+    position:absolute;
+    display: flex;
+    top: 85%;
+    left: calc(50% - 125px);
+    
+    font-size: 30px;
+    color: hsla(0, 0%, 100%, .5);
+
+    align-items: center;
+    
+
+    li {
+        text-align: center;
+        margin: 0 15px;
+
+        button{
+            display: none;
+        }
+    }
+    .slick-active{
+        color: hsla(0, 0%, 100%, .9);
+        
+        &::marker{
+            border: 2px white solid;
+            border-radius: 50%;
+            text-align: center;
+        }
+    }
+}

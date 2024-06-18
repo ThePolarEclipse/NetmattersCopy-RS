@@ -5,3 +5,13 @@ $('.row-partners').slick({
 	autoplaySpeed: 2000,
 	arrows: false
 });
+
+$('#banner').slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	dots: true,
+	autoplay: true,
+	autoplaySpeed: 4000,
+	arrows: false,
+	cssEase: 'linear',
+});

@@ -16,6 +16,9 @@
     width:auto;
     padding-right: 40px;
   }
+  .icon-star::before{
+    font-size: 50px;
+  }
 }
 
 @include respond-to(tablet) {
@@ -35,6 +38,9 @@
   header>.container,
   .desktop-priority{
     display:none !important;
+  }
+  .content-container{
+    align-items: center;
   }
   #banner .content {
     position: absolute;
