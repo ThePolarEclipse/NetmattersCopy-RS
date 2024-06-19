@@ -55,13 +55,13 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.35);
+      background: linear-gradient(270deg,transparent 25%,#000);
     }
   }
 
   .content-container{
     align-items: start;
-    padding-left: 14vw !important;
+    margin-left: 13vw;
   }
 
   .banner-slide-item{

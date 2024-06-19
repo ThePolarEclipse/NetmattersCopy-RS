@@ -12,8 +12,19 @@
     margin-left:-40px;
     
 }
+
+.is-sticky {
+    top: 0;
+}
+
+.is-hidden {
+    top: -231px !important;
+}
+
 header {
     display: block;
+    background: white;
+    transition: top 0.6s ease-in-out;
 
     div.container {
         background:#333645;

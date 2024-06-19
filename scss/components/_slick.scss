@@ -15,17 +15,30 @@
         text-align: center;
         margin: 0 15px;
 
-        button{
-            display: none;
+        position: relative;
+
+        button {
+            background: none;
+            color: hsla(0, 0%, 100%, 0);
+            border: none;
+            position: absolute; 
+            top: 12px;
+            left: -39.5px; 
         }
+        
     }
     .slick-active{
-        color: hsla(0, 0%, 100%, .9);
+        color: hsla(0, 0%, 100%, 1);
         
-        &::marker{
-            border: 2px white solid;
+        button:before {
+            content: "";
+            display: inline-block; 
+            color: #fff;
             border-radius: 50%;
-            text-align: center;
+            border: 2px solid #fff;
+            width: 20px;
+            height: 20px;
+            
         }
     }
 }

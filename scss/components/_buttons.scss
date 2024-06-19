@@ -81,8 +81,10 @@
 
   &-wcu {
     @include button-styles($colour-why-choose-us);
-    border-color: #926fb1;
-    padding: 20px 10px;
+  }
+
+  &-bespoke {
+    @include button-styles($colour-bespoke);
   }
 
   &-software {
@@ -147,6 +149,10 @@
     justify-content: center;
     border: 0;
     box-shadow:0 3px 35px rgba(0, 0, 0, .1);
+  }
+  
+  &-banner{
+    padding: 15px 15px;
   }
 }
 
