@@ -19,6 +19,59 @@
     color: white;
   }
 }
+#cookie-checker{
+  width: 75vw;
+
+  z-index: 10001;
+  background-color: white;
+
+  color: #333645;
+  border: 1px solid grey;
+  border-radius: 1%;
+  
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  p{  
+    padding-bottom: 2rem;
+    line-height: 1.875rem;
+  }
+  h3{
+    font-weight: 400;
+    font-size: 1.625rem;
+
+    margin: 0;
+    padding: 1rem;
+  }
+
+  h3, p{
+    padding-left: 10px;
+    border-bottom: 1px solid lightgray;
+  }
+  
+
+  .row{
+    justify-content:center;
+    padding-top: 0;
+    flex-wrap: wrap;
+
+    .btn{
+      padding:10px 10%;
+      margin-top: 20px;
+      width:90%;
+
+      &-accept{
+        background: $colour-why-choose-us;
+      }
+      &-change{
+        background: grey;
+      }
+    }
+  }
+
+}
 
 #banner {
   display: flex;
