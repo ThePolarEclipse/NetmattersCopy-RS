@@ -81,8 +81,10 @@
 
   &-wcu {
     @include button-styles($colour-why-choose-us);
-    border-color: #926fb1;
-    padding: 20px 10px;
+  }
+
+  &-bespoke {
+    @include button-styles($colour-bespoke);
   }
 
   &-software {
@@ -147,6 +149,37 @@
     justify-content: center;
     border: 0;
     box-shadow:0 3px 35px rgba(0, 0, 0, .1);
+  }
+  
+  &-banner{
+    padding: 15px 15px;
+  }
+
+  &-side{
+    background: none;
+    outline: 1px solid rgba(0, 0, 0, 0.25);
+    border: 1px solid hsla(0, 0%, 100%, 0.1);
+    border-radius: 3px;
+
+    padding: 21px;
+    font-size: 18px;
+
+    margin: 20px 10px;
+    text-align: center;
+  }
+
+  &-title{
+    background: none;
+    outline: 1px solid rgba(0, 0, 0, 0.25);
+    border: 1px solid hsla(0, 0%, 100%, 0.1);
+    color: #fff;
+    text-transform: uppercase;
+
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+
+    height: 128px;
+    width: 80%;
   }
 }
 

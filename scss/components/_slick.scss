@@ -1,0 +1,44 @@
+.slick-dots {
+    
+    position:absolute;
+    display: flex;
+    top: 85%;
+    left: calc(50% - 125px);
+    
+    font-size: 30px;
+    color: hsla(0, 0%, 100%, .5);
+
+    align-items: center;
+    
+
+    li {
+        text-align: center;
+        margin: 0 15px;
+
+        position: relative;
+
+        button {
+            background: none;
+            color: hsla(0, 0%, 100%, 0);
+            border: none;
+            position: absolute; 
+            top: 12px;
+            left: -39.5px; 
+        }
+        
+    }
+    .slick-active{
+        color: hsla(0, 0%, 100%, 1);
+        
+        button:before {
+            content: "";
+            display: inline-block; 
+            color: #fff;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            width: 20px;
+            height: 20px;
+            
+        }
+    }
+}

@@ -16,6 +16,22 @@
     width:auto;
     padding-right: 40px;
   }
+  .icon-star::before{
+    font-size: 50px;
+  }
+  
+  #cookie-checker{
+    width:600px;
+    height: 372.141px;
+
+    .row{
+      justify-content: space-between;
+  
+      .btn{
+        width: auto;
+      }
+    }
+  }
 }
 
 @include respond-to(tablet) {
@@ -28,13 +44,27 @@
 }
 
 @include respond-to(desktop) {
-  .container {
-    //width: 970px;
-
+  #menu{
+    width:275px;
   }
+  .sidebar-large{
+    display: none;
+  }
+  .sidebar-small{
+    display: block !important;
+  }
+  #panel.panel-open{
+    transform: translateX(-275px) !important;
+  }
+
+
   header>.container,
   .desktop-priority{
     display:none !important;
+  }
+  .content-container{
+    align-items: center;
+    margin-left: 0 !important;
   }
   #banner .content {
     position: absolute;

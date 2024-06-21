@@ -19,16 +19,87 @@
     color: white;
   }
 }
+#cookie-checker{
+  width: 75vw;
+
+  z-index: 10001;
+  background-color: white;
+
+  color: #333645;
+  border: 1px solid grey;
+  border-radius: 1%;
+  
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  p{  
+    padding-bottom: 2rem;
+    line-height: 1.875rem;
+  }
+  h3{
+    font-weight: 400;
+    font-size: 1.625rem;
+
+    margin: 0;
+    padding: 1rem;
+  }
+
+  h3, p{
+    padding-left: 10px;
+    border-bottom: 1px solid lightgray;
+  }
+  
+
+  .row{
+    justify-content:center;
+    padding-top: 0;
+    flex-wrap: wrap;
+
+    .btn{
+      padding:10px 10%;
+      margin-top: 20px;
+      width:90%;
+
+      &-accept{
+        background: $colour-why-choose-us;
+      }
+      &-change{
+        background: grey;
+      }
+    }
+  }
+
+}
 
 #banner {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
+
+  height: 550px;
 
   .banner-img {
     position: relative;
+    height: 100%;
+
+    overflow: hidden;
+
+    display:block;
+
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+      object-fit: cover;
+
+    }
 
     &::after {
       content: "";
@@ -37,8 +108,19 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.35);
+      background: linear-gradient(270deg,transparent 25%,#000);
     }
+  }
+
+  .content-container{
+    align-items: start;
+    margin-left: 13vw;
+  }
+
+  .banner-slide-item{
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
 
   .content {
@@ -47,9 +129,12 @@
     left: 40%;
     transform: translate(-50%, -50%);
     font-size: 1.25rem;
+
     z-index: 1;
     color: white;
     text-align: left;
+
+    width: 100%;
 
     .h1 {
       font-size: 4rem;
@@ -62,15 +147,24 @@
 .row-partners{
     display:flex;
     overflow-x: hidden;
+    margin-top: 2.5rem;
+    margin-bottom: .5rem;
 
+    height: 70px;
+ 
     img{
-        padding: 4rem 2.5rem 3rem 2.5rem;
-        height:50%;
-        align-self: center;
-        filter: grayscale(1);
+      padding: .5rem 2.5rem;
+      max-height: 70px;
+      width: auto !important;
 
-        &:hover{
-            filter: grayscale(0);
-        }
-    }
+      align-self: center;
+      filter: grayscale(1);
+
+      &:hover{
+          filter: grayscale(0);
+      }
+  }
+}
+.slick-track{
+  max-height: 100%;
 }
