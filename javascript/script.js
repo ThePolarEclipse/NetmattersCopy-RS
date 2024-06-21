@@ -58,6 +58,7 @@ $('#banner').slick({
 });
 
 //sticky header
+/*
 $(document).ready(function() {
 var lastScrollTop = 0;
 var header = $('header');
@@ -88,6 +89,7 @@ var header = $('header');
 	});
 	header.addClass('is-hidden');
 });
+*/
 //side menu
 
 var slideout = new Slideout({
@@ -134,3 +136,4 @@ function close(eve) {
 	  this.panel.removeEventListener('click', close);
 	});
 	
+	//maybe use the support sticky stuff for header instead of the one im using with the plguin? 
