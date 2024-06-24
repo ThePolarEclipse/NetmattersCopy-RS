@@ -44,17 +44,11 @@
 }
 
 @include respond-to(desktop) {
-  #menu{
-    width:275px;
-  }
   .sidebar-large{
     display: none;
   }
   .sidebar-small{
     display: block !important;
-  }
-  #panel.panel-open{
-    transform: translateX(-275px) !important;
   }
 
 

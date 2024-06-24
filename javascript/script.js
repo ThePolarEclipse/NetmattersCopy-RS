@@ -58,7 +58,7 @@ $('#banner').slick({
 });
 
 //sticky header
-/*
+
 $(document).ready(function() {
 var lastScrollTop = 0;
 var header = $('header');
@@ -89,51 +89,21 @@ var header = $('header');
 	});
 	header.addClass('is-hidden');
 });
-*/
+
 //side menu
-
-var slideout = new Slideout({
-	'panel': document.getElementById('panel'),
-	'menu': document.getElementById('menu'),
-	'padding': window.innerWidth >= 992 ? 350 : 275,
-	'tolerance': 70,
-	'side': 'right'
+$('#menu').SlideOutPanel({
+	bodyPush: true,
+	breakpoint: "1px",
+    closeBtnSize: '',
+    enableEscapeKey: true,
+    screenOpacity: '1',
+    screenZindex:  '99998',
+    showScreen: false,
+    transition: 'ease',
+    transitionDuration: '0.35s',
 });
 
-function updateSlideoutPadding() {
-    if (window.innerWidth >= 992) {
-        slideout._padding = 350;
-    } else {
-        slideout._padding = 275;
-    }
-}
-
-window.addEventListener('resize', function() {
-    updateSlideoutPadding();
-});
-
-//Toggle button
+const slideOutPanel = $('#menu').SlideOutPanel();
 $('.btn-burger').on('click', function() {
-	updateSlideoutPadding();
-    slideout.toggle();
+    slideOutPanel.toggle();
 });
-
-//Click outside of menu to close
-function close(eve) {
-	eve.preventDefault();
-	slideout.close();
-  }
-  
-  slideout
-	.on('beforeopen', function() {
-	  this.panel.classList.add('panel-open');
-	})
-	.on('open', function() {
-	  this.panel.addEventListener('click', close);
-	})
-	.on('beforeclose', function() {
-	  this.panel.classList.remove('panel-open');
-	  this.panel.removeEventListener('click', close);
-	});
-	
-	//maybe use the support sticky stuff for header instead of the one im using with the plguin? 
