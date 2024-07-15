@@ -15,6 +15,7 @@
   .logo{
     width:auto;
     padding-right: 40px;
+    margin-right: 85px;
   }
   .icon-star::before{
     font-size: 50px;
@@ -41,6 +42,7 @@
   .article-item{
     max-width: 80%;
   }
+
 }
 
 @include respond-to(desktop) {
@@ -51,7 +53,6 @@
     display: block !important;
   }
 
-
   header>.container,
   .desktop-priority{
     display:none !important;
@@ -61,8 +62,8 @@
     margin-left: 0 !important;
   }
   #banner .content {
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.25rem;
@@ -88,6 +89,13 @@
   }
   .footer-items{
       display: block !important;
+  }
+  .footer-socials{
+    width: 150px;
+
+    .btn{
+      margin-top:5px;
+    }
   }
   .middle {
       color: white;
@@ -125,13 +133,18 @@
     #search-input-top{
         display:none;
     }
+    
     .search-btn-big{
         border-radius: 10% !important;
     }
 }
 //grid changes when the page is half-way between mobile and desktop
 @media (min-width: 991px) and (max-width: 1350px){
-    .services {
+  #header{
+    height: 110px;
+  }  
+  
+  .services {
         align-content: center;
         justify-content: center;
         display: grid;
@@ -162,4 +175,15 @@
           grid-area: 3 / 1 / 4 / 4; 
         }
     }
+}
+@media (min-width: 1400px){
+  header ul li{
+    width: 180px !important;
+    
+    .banner-item{
+      &:hover::before{
+          border-width: 35px 85px 0;
+      }
+    }
+  }
 }

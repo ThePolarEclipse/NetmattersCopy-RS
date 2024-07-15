@@ -9,8 +9,6 @@
     width:80%;
     height:80%;
     align-self:center;
-    margin-left:-40px;
-    
 }
 
 .is-sticky {
@@ -27,7 +25,7 @@ header {
     background: white;
     transition: top 0.6s ease-in-out;
     
-    div.container {
+    &:not(.header-sub-banner) > div.container {
         background:#333645;
         width: 100vw !important;
 
@@ -96,7 +94,7 @@ header {
             background-color: #999aa2;
             color:white;
             border: none;
-            border-radius: 0% 10% 10% 0%;
+            border-radius: 0% 5% 5% 0%;
 
             & span::before{
                 font-size: 2.5rem;
@@ -112,7 +110,7 @@ header {
         
 
         li {
-            width: 20%;
+            width: 120px;
             div{
                 position: relative;
                 display: flex;
@@ -236,7 +234,7 @@ header {
             width: 0;
             height: 0;
             border-style: solid;
-            border-width: 35px 75px 0;
+            border-width: 35px 60px 0;
         }
         &_apps:hover::before{
             border-color: $colour-software transparent transparent;
@@ -274,6 +272,15 @@ footer {
       display: flex;
       justify-content: space-around;
   }
+  .footer-socials a {
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    span{
+        font-size: 1.863rem;
+    }
+  }
+
   .container-footer-bottom{
     align-items: start;
   }
