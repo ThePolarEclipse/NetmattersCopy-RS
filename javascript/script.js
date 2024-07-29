@@ -119,3 +119,22 @@ function initializeSideMenu() {
         slideOutPanel.toggle();
     });
 }
+
+// Function to validate email address
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}
+
+  // Assign the current image to an email address
+$('#contact-form').on('submit', function(event) {
+    
+    const email = $('#emailInput').val();
+
+    // Check for email validation
+    if (!validateEmail(email)) {
+        alert('Please enter a valid email address.');
+        event.preventDefault();
+        return;
+    }
+});

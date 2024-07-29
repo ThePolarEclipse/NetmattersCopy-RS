@@ -20,6 +20,10 @@
   .icon-star::before{
     font-size: 50px;
   }
+
+  .container:has(.breadcrumb){
+    display: block!important;
+  }
   
   #cookie-checker{
     width:600px;
@@ -98,16 +102,16 @@
     }
   }
   .middle {
-      color: white;
-      background: #323544;
-      flex-direction: column;
-      padding: 10px;
+    color: white;
+    background: #323544;
+    flex-direction: column;
+    padding: 10px;
 
-      &-item{
-        margin: 20px 0;
-        width: 90%;
-      }
-}
+    &-item{
+      margin: 20px 0;
+      width: 90%;
+    }
+  }
 }
 
 //specifically for the third article item to be hidden
@@ -126,6 +130,20 @@
         display:none;
     }
 }
+@media (min-width: 993px){
+    .office-list{
+      flex-direction: row;
+      .office-item{
+        max-width: 350px;
+      }
+    }
+    .section-head{
+      background-color: white;
+      .our-offices{
+          color: #666;
+      }
+    }
+}
 
 //for the search bar at the very top of the page and service grid
 @media (min-width: 991px) and (max-width: 1159px),
@@ -139,11 +157,7 @@
     }
 }
 //grid changes when the page is half-way between mobile and desktop
-@media (min-width: 991px) and (max-width: 1350px){
-  #header{
-    height: 110px;
-  }  
-  
+@media (min-width: 991px) and (max-width: 1350px){  
   .services {
         align-content: center;
         justify-content: center;
@@ -185,5 +199,13 @@
           border-width: 35px 85px 0;
       }
     }
+  }
+}
+@media (max-width: 1259px){
+  .contacts {
+    flex-direction: column;
+  }
+  .users-form{
+    width: 100%;
   }
 }
