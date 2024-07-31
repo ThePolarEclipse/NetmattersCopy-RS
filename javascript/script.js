@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$(this).scrollTop(0);
+    $(this).scrollTop(0);
 
     handleCookieChecker();
     initializeCarousels();
@@ -9,9 +9,13 @@ $(document).ready(function() {
 
 // Function to handle cookie checker logic
 function handleCookieChecker() {
+    
+    $('#cookie-wrapper').hide();
+
     if (getCookie("cookies") === "accepted") {
         $('#cookie-wrapper').hide();
     } else {
+        $('#cookie-wrapper').show();
         $('body').addClass('no-scroll');
     }
 
@@ -111,12 +115,13 @@ function initializeSideMenu() {
         screenZindex:  '99998',
         showScreen: false,
         transition: 'ease',
-        transitionDuration: '0.35s',
+        transitionDuration: '0.45s',
     });
 
     const slideOutPanel = $('#menu').SlideOutPanel();
     $('.btn-burger').on('click', function() {
         slideOutPanel.toggle();
+        $('.hamburger-menu').toggleClass('active');
     });
 }
 
@@ -126,9 +131,14 @@ function validateEmail(email) {
     return re.test(email);
 }
 
+<<<<<<< Updated upstream
   // Assign the current image to an email address
 $('#contact-form').on('submit', function(event) {
     
+=======
+// Assign the current image to an email address
+$('#contact-form').on('submit', function(event) {
+>>>>>>> Stashed changes
     const email = $('#emailInput').val();
 
     // Check for email validation
@@ -137,4 +147,8 @@ $('#contact-form').on('submit', function(event) {
         event.preventDefault();
         return;
     }
+<<<<<<< Updated upstream
 });
+=======
+});
+>>>>>>> Stashed changes

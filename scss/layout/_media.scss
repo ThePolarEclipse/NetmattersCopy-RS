@@ -7,15 +7,7 @@
     display: none !important;
   }
   .article-list {
-    width: 95vw;
-  }
-  .article-item {
-    flex: 100%;
-  }
-  .logo{
-    width:auto;
-    padding-right: 40px;
-    margin-right: 85px;
+    width: 100%;
   }
   .icon-star::before{
     font-size: 50px;
@@ -24,10 +16,22 @@
   .container:has(.breadcrumb){
     display: block!important;
   }
+<<<<<<< Updated upstream
+=======
+
+  .btn-burger{
+    position: relative;
+  }
+  .logo{
+    width: 60%;
+    height: auto;
+    position: relative;
+    left: -30px;
+  }
+>>>>>>> Stashed changes
   
   #cookie-checker{
     width:600px;
-    height: 372.141px;
 
     .row{
       justify-content: space-between;
@@ -115,13 +119,24 @@
 }
 
 //specifically for the third article item to be hidden
-@media (min-width: 1000px) and (max-width: 1499px) {
-    .article-third{
-        display:none;
-    }
-    .article-list{
-        justify-content: center;
-    }
+@media (min-width: 1000px) and (max-width: 1263px) {
+  .article-third{
+    display:none;
+  }
+  .article-item{
+    width: 45% !important;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1463px) {
+  .article-item{
+    width: 300px;
+  }
+}
+@media (min-width: 1463px) {
+  .article-item{
+    width: 370px;
+  }
 }
 
 //for the parts of the page that need to be hidden only when a mobile viewport is active

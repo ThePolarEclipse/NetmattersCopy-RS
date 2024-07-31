@@ -19,7 +19,11 @@ $result = $conn->query($sql);
     <body>  
         <button type="button" class="btn-cookies btn">Manage Consent</button>
         <button type="button" class="btn-chat btn"><span class="icon-chat"></span></button>
+<<<<<<< Updated upstream
         <div id="cookie-wrapper">
+=======
+        <div id="cookie-wrapper" style="display:none;">
+>>>>>>> Stashed changes
             <div id="cookie-checker">
                 <h3>Cookies Policy</h3>
                 <p>
@@ -364,9 +368,18 @@ $result = $conn->query($sql);
                             <div class="article-list">
                                 <?php
                                 if ($result->num_rows > 0) {
+<<<<<<< Updated upstream
                                     while($row = $result->fetch_assoc()) {
                                         ?>
                                         <div class="article-item">
+=======
+                                    $counter = 0; // Counter to find 3rd article
+                                    while($row = $result->fetch_assoc()) {
+                                        $counter++;
+                                        $additionalClass = ($counter == 3) ? ' article-third' : ''; // Adds the class for the third article so it can be hidden
+                                        ?>
+                                        <div class="article-item<?php echo $additionalClass; ?>">
+>>>>>>> Stashed changes
                                             <a class="article-link" href="#"></a>
                                             <a href="#" class="<?php echo strtolower($row['type']); ?> article-type" title="View all: <?php echo $row['type']; ?>"><?php echo $row['type']; ?></a>
                                             <div class="article-image">
@@ -426,6 +439,10 @@ $result = $conn->query($sql);
         <script src="javascript/plugins/jquery.sticky.js"></script>
 
         <script src="javascript/plugins/jquery-SlideOutPanel-master/dist/js/slide-out-panel.js"></script> 
+<<<<<<< Updated upstream
+=======
+        <script src="javascript/plugins/velocity.min.js"></script> 
+>>>>>>> Stashed changes
 
         <script src="javascript/script.js"></script>
     </body>

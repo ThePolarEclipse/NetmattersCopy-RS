@@ -22,7 +22,17 @@
                                 <span class="icon-search"></span>
                             </button>
                         </form>
+<<<<<<< Updated upstream
                         <button type="button" class="btn-burger darken"><span class="icon-hamburger"></span></button>
+=======
+                        <button type="button" class="btn-burger"><!-- Hamburger Menu -->
+                            <div class="hamburger-menu">
+                                <div class="ham-bar bar-top"></div>
+                                <div class="ham-bar bar-mid"></div>
+                                <div class="ham-bar bar-bottom"></div>
+                            </div>
+                        </button>
+>>>>>>> Stashed changes
                     </div>
                     <form method="GET" action="#" accept-charset="UTF-8" id="form-big" class="search-form mobile-priority">
                         <label for="search-input" class="hidden">Search:</label>

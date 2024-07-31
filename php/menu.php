@@ -116,59 +116,105 @@
                         <div class="sidebar-services">
                             <p>Services</p>
                             <ul>
+<<<<<<< Updated upstream
                                 <li>>>Bespoke Software</li>
                                 <li>>>IT Support</li>
                                 <li>>>Software Integrations</li>
                                 <li>>>Digital Marketing</li>
                                 <li>>>Web design</li>
                                 <li>>>cyber security</li>
+=======
+                                <li class="icon-dbl-arrows"> Bespoke Software</li>
+                                <li class="icon-dbl-arrows"> IT Support</li>
+                                <li class="icon-dbl-arrows"> Software Integrations</li>
+                                <li class="icon-dbl-arrows"> Digital Marketing</li>
+                                <li class="icon-dbl-arrows"> Web design</li>
+                                <li class="icon-dbl-arrows"> cyber security</li>
+>>>>>>> Stashed changes
                             </ul>
                         </div>
                         <div class="sidebar-work">
                             <p>Our work</p>
                             <ul>
+<<<<<<< Updated upstream
                                 <li>>>Case studies</li>
                                 <li>>>our digital marketing clients</li>
                                 <li>>>our website clients</li>
                                 <li>>>our it clients</li>
                                 <li>>>our bespoke software clients</li>
                                 <li>>>our telecoms clients</li>
+=======
+                                <li class="icon-dbl-arrows"> Case studies</li>
+                                <li class="icon-dbl-arrows"> our digital marketing clients</li>
+                                <li class="icon-dbl-arrows"> our website clients</li>
+                                <li class="icon-dbl-arrows"> our it clients</li>
+                                <li class="icon-dbl-arrows"> our bespoke software clients</li>
+                                <li class="icon-dbl-arrows"> our telecoms clients</li>
+>>>>>>> Stashed changes
                             </ul>
                         </div>
                         <div class="sidebar-knowledge">
                             <p>Our knowledge</p>
                             <ul>
+<<<<<<< Updated upstream
                                 <li>>>Technologies</li>
                                 <li>>>industries</li>
                                 <li>>>news</li>
                                 <li>>>insights</li>
+=======
+                                <li class="icon-dbl-arrows"> Technologies</li>
+                                <li class="icon-dbl-arrows"> industries</li>
+                                <li class="icon-dbl-arrows"> news</li>
+                                <li class="icon-dbl-arrows"> insights</li>
+>>>>>>> Stashed changes
                             </ul>
                         </div>
                         <div class="sidebar-training">
                             <p>Training</p>
                             <ul>
+<<<<<<< Updated upstream
                                 <li>>>train for a career in tech</li>
                                 <li>>>skills bootcamp</li>
                                 <li>>>scs frequently asked questions</li>
                                 <li>>>scion Collaborators</li>
+=======
+                                <li class="icon-dbl-arrows"> train for a career in tech</li>
+                                <li class="icon-dbl-arrows"> skills bootcamp</li>
+                                <li class="icon-dbl-arrows"> scs frequently asked questions</li>
+                                <li class="icon-dbl-arrows"> scion Collaborators</li>
+>>>>>>> Stashed changes
                             </ul>
                         </div>
                         <div class="sidebar-company">
                             <p>Our company</p>
                             <ul>
+<<<<<<< Updated upstream
                                 <li>>>why choose us</li>
                                 <li>>>our culture</li>
                                 <li>>>our team</li>
                                 <li>>>our careers</li>
                                 <li>>>our benefits</li>
+=======
+                                <li class="icon-dbl-arrows"> why choose us</li>
+                                <li class="icon-dbl-arrows"> our culture</li>
+                                <li class="icon-dbl-arrows"> our team</li>
+                                <li class="icon-dbl-arrows"> our careers</li>
+                                <li class="icon-dbl-arrows"> our benefits</li>
+>>>>>>> Stashed changes
                             </ul>
                         </div>
                         <div class="sidebar-contact">
                             <p>contact us</p>
                             <ul>
+<<<<<<< Updated upstream
                                 <li>>>Cambridge office</li>
                                 <li>>>wymondham office</li>
                                 <li>>>great Yarmouth office</li>
+=======
+                                <li class="icon-dbl-arrows"> Cambridge office</li>
+                                <li class="icon-dbl-arrows"> wymondham office</li>
+                                <li class="icon-dbl-arrows"> great Yarmouth office</li>
+>>>>>>> Stashed changes
                             </ul>
                         </div>
                         <p>covid risk assessments</p>

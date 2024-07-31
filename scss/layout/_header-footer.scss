@@ -6,9 +6,11 @@
     cursor: pointer;
 }
 .logo{
-    width:80%;
-    height:80%;
-    align-self:center;
+    width:auto;
+    height:10vw;
+    align-self: center;
+    position: absolute;
+    left: 10px;
 }
 
 .is-sticky {
@@ -31,7 +33,10 @@ header {
 
     }
     .icon-phone {
-        font-size: 2rem;;
+        font-size: 2rem;
+        margin-right: 10px;
+        position: absolute;
+        right: 80px;
     }
     form.search-form.mobile-priority{
         display: flex;

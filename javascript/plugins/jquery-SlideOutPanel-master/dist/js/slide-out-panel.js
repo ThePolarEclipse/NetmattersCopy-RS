@@ -179,6 +179,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
           e.preventDefault();
           var closeBtnElemId = $(_this).attr('data-id');
           closePanel(closeBtnElemId, globalSettings[closeBtnElemId], _this);
+          $('.hamburger-menu').toggleClass('active');
           return false;
         }, false);
       }
@@ -323,7 +324,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
           left: -350,
         });
       }
-    
+      setPanelWidth();
       setTimeout(function () {
         settings.afterOpen();
       }, settings.transitionDuration * 1000);
@@ -363,7 +364,23 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
           }
         }
       }
+      setPanelWidth();
     };
+    function setPanelWidth() {
+      var width;
+      if (window.innerWidth < 992) {
+        width = '275px';
+      } else {
+        width = '350px';
+      }
+    
+      // Update the width of the slide-out panel container
+      $('.slide-out-panel-container').css('width', width);
+    
+      // Extract the numerical value from the width and apply it to the left property of html
+      var numericWidth = parseInt(width, 10);
+      $('html').css('left', -numericWidth + 'px');
+    }
 
     var resizeTimer;
     $(window).on('resize', function (e) {

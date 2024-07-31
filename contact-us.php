@@ -38,7 +38,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <body>  
         <button type="button" class="btn-cookies btn">Manage Consent</button>
         <button type="button" class="btn-chat btn"><span class="icon-chat"></span></button>
+<<<<<<< Updated upstream
         <div id="cookie-wrapper">
+=======
+        <div id="cookie-wrapper" style="display:none;">
+>>>>>>> Stashed changes
             <div id="cookie-checker">
                 <h3>Cookies Policy</h3>
                 <p>
@@ -232,6 +236,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <script src="javascript/plugins/jquery.sticky.js"></script>
 
         <script src="javascript/plugins/jquery-SlideOutPanel-master/dist/js/slide-out-panel.js"></script> 
+<<<<<<< Updated upstream
+=======
+        <script src="javascript/plugins/velocity.min.js"></script> 
+>>>>>>> Stashed changes
 
         <script src="javascript/script.js"></script>
     </body>
