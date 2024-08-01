@@ -187,13 +187,18 @@
 
 .btn-burger {
   @include button-styles(#333645);
-  padding: 0 10px;
+  padding: 5px 15px;
   height: 56px;
+  min-width: 70px;
   border: none;
-  border-radius: 10%;
+  border-radius: 4px;
   font-size: 1.438rem;
   margin: 10px 0;
   margin-right: 8px;
+  filter: brightness(100%);
+  position:absolute;
+  right:0;
+  
 }
 .article-btn{
     color: white;

@@ -34,7 +34,7 @@
 
   &-service{
     display: flex;
-    max-width: 80%;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
   }
@@ -61,4 +61,33 @@
 }
 .no-scroll {
   overflow: hidden;
+}
+
+.ham-bar{
+  width: 55%;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform .6s, opacity .8s, top .6s;
+}
+.bar-top{
+  top:30%;
+}
+.bar-bottom{
+  top:70%;
+}
+
+.active .bar-top{
+  transform: translate(-50%, -50%) rotate(-315deg);
+  top:50%;
+}
+.active .bar-mid{
+  opacity: 0;
+}
+.active .bar-bottom{
+  transform: translate(-50%, -50%) rotate(-225deg);
+  top:50%;
 }

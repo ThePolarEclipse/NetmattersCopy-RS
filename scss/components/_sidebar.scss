@@ -7,15 +7,20 @@
     color: #fff;
     text-decoration: none;
     .sidebar-large{
-      padding: 0 14px;
+      width: 350px;
+      padding: 0;
       text-align:left ;
 
       li{
         padding: 15px 20px;
-        
+      }
+      p{
+        padding-left: 16px;
       }
     }
     .sidebar-small{
+      width: 275px;
+      padding: 0 20px;
       text-align: center;
     }
     .button-list{
