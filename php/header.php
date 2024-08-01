@@ -23,8 +23,11 @@
                             </button>
                         </form>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                         <button type="button" class="btn-burger darken"><span class="icon-hamburger"></span></button>
 =======
+=======
+>>>>>>> Stashed changes
                         <button type="button" class="btn-burger"><!-- Hamburger Menu -->
                             <div class="hamburger-menu">
                                 <div class="ham-bar bar-top"></div>
@@ -32,6 +35,9 @@
                                 <div class="ham-bar bar-bottom"></div>
                             </div>
                         </button>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
                     </div>
                     <form method="GET" action="#" accept-charset="UTF-8" id="form-big" class="search-form mobile-priority">

@@ -17,7 +17,10 @@
     display: block!important;
   }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 
   .btn-burger{
     position: relative;
@@ -28,6 +31,9 @@
     position: relative;
     left: -30px;
   }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   
   #cookie-checker{
@@ -85,6 +91,9 @@
       margin: 0 0 1.25rem;
       font-weight: 600;
       text-align: center;
+    }
+    .h1-long{
+      max-width: 100%;
     }
   }
   .services {
@@ -223,4 +232,24 @@
   .users-form{
     width: 100%;
   }
+<<<<<<< Updated upstream
+=======
+}
+
+@media (min-width: 768px) {
+  .container {
+      width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+      width: 970px;
+  }
+}
+@media (min-width: 1260px) {
+  .container {
+      width: 1200px;
+  }
+>>>>>>> Stashed changes
 }

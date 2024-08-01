@@ -132,9 +132,14 @@ function validateEmail(email) {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   // Assign the current image to an email address
 $('#contact-form').on('submit', function(event) {
     
+=======
+// Assign the current image to an email address
+$('#contact-form').on('submit', function(event) {
+>>>>>>> Stashed changes
 =======
 // Assign the current image to an email address
 $('#contact-form').on('submit', function(event) {
@@ -148,7 +153,11 @@ $('#contact-form').on('submit', function(event) {
         return;
     }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 });
+=======
+});
+>>>>>>> Stashed changes
 =======
 });
 >>>>>>> Stashed changes
