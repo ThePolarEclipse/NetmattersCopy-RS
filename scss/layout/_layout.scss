@@ -1,11 +1,14 @@
 .container {
   display: flex;
   padding: 0.8125rem;
-  padding-left: 10vw !important;
-  padding-right: 10vw !important;
+  //padding-left: 10vw !important;
+  //padding-right: 10vw !important;
   flex-direction: column;
   align-items: center;
-  
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   
 
   &-footer{
@@ -34,7 +37,7 @@
 
   &-service{
     display: flex;
-    max-width: 80%;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
   }
@@ -51,9 +54,14 @@
   flex-direction: row;
   padding: 50px;
 
+  box-shadow: 0 0 0 100vmax #323544;
+  clip-path: inset(0 -100vmax); 
+  
+
   &-item{
     margin: 0 10px;
     width: 50%;
+    z-index: 2;
   }
   p{
     line-height: 30px;
@@ -61,4 +69,36 @@
 }
 .no-scroll {
   overflow: hidden;
+}
+
+.ham-bar{
+  width: 55%;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform .6s, opacity .8s, top .6s;
+}
+.bar-top{
+  top:30%;
+}
+.bar-bottom{
+  top:70%;
+}
+
+.active .bar-top{
+  transform: translate(-50%, -50%) rotate(-315deg);
+  top:50%;
+}
+.active .bar-mid{
+  opacity: 0;
+}
+.active .bar-bottom{
+  transform: translate(-50%, -50%) rotate(-225deg);
+  top:50%;
+}
+.h1-long{
+  max-width: 80%;
 }

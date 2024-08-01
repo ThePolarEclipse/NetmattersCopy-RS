@@ -1,14 +1,22 @@
-#header-banner{
-    display:inline-flex;
-    width: 100%;
-    margin: 0 auto;
+#header {
+    overflow: hidden;
     padding: 0;
-    cursor: pointer;
+    margin: auto;
+    align-items: center;
+    &-banner{
+        display:inline-flex;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        cursor: pointer;
+    }
 }
 .logo{
-    width:80%;
-    height:80%;
-    align-self:center;
+    width:auto;
+    height:10vw;
+    align-self: center;
+    position: absolute;
+    left: 10px;
 }
 
 .is-sticky {
@@ -24,14 +32,20 @@ header {
     display: block;
     background: white;
     transition: top 0.6s ease-in-out;
+
+    margin: 0!important;
     
     &:not(.header-sub-banner) > div.container {
         background:#333645;
-        width: 100vw !important;
+        box-shadow: 0 0 0 100vmax #323544;
+        clip-path: inset(0 -100vmax);
 
     }
     .icon-phone {
-        font-size: 2rem;;
+        font-size: 2rem;
+        margin-right: 10px;
+        position: absolute;
+        right: 80px;
     }
     form.search-form.mobile-priority{
         display: flex;
@@ -40,7 +54,7 @@ header {
         display:flex;
     }
     #form-big{
-        width: 125%;
+        width: 110%;
     }
     #search-input{
         background-color: rgba(0, 0, 0, .1);

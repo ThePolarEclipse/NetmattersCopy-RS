@@ -7,23 +7,28 @@
     display: none !important;
   }
   .article-list {
-    width: 95vw;
-  }
-  .article-item {
-    flex: 100%;
-  }
-  .logo{
-    width:auto;
-    padding-right: 40px;
-    margin-right: 85px;
+    width: 100%;
   }
   .icon-star::before{
     font-size: 50px;
   }
+
+  .container:has(.breadcrumb){
+    display: block!important;
+  }
+
+  .btn-burger{
+    position: relative;
+  }
+  .logo{
+    width: 60%;
+    height: auto;
+    position: relative;
+    left: -30px;
+  }
   
   #cookie-checker{
     width:600px;
-    height: 372.141px;
 
     .row{
       justify-content: space-between;
@@ -78,6 +83,9 @@
       font-weight: 600;
       text-align: center;
     }
+    .h1-long{
+      max-width: 100%;
+    }
   }
   .services {
       display: flex;
@@ -98,32 +106,57 @@
     }
   }
   .middle {
-      color: white;
-      background: #323544;
-      flex-direction: column;
-      padding: 10px;
+    color: white;
+    background: #323544;
+    flex-direction: column;
+    padding: 10px;
 
-      &-item{
-        margin: 20px 0;
-        width: 90%;
-      }
-}
+    &-item{
+      margin: 20px 0;
+      width: 90%;
+    }
+  }
 }
 
 //specifically for the third article item to be hidden
-@media (min-width: 1000px) and (max-width: 1499px) {
-    .article-third{
-        display:none;
-    }
-    .article-list{
-        justify-content: center;
-    }
+@media (min-width: 1000px) and (max-width: 1263px) {
+  .article-third{
+    display:none;
+  }
+  .article-item{
+    width: 45% !important;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1463px) {
+  .article-item{
+    width: 300px;
+  }
+}
+@media (min-width: 1463px) {
+  .article-item{
+    width: 370px;
+  }
 }
 
 //for the parts of the page that need to be hidden only when a mobile viewport is active
 @media (min-width: 0px) and (max-width: 766px){
     .not-mobile{
         display:none;
+    }
+}
+@media (min-width: 993px){
+    .office-list{
+      flex-direction: row;
+      .office-item{
+        max-width: 350px;
+      }
+    }
+    .section-head{
+      background-color: white;
+      .our-offices{
+          color: #666;
+      }
     }
 }
 
@@ -139,11 +172,7 @@
     }
 }
 //grid changes when the page is half-way between mobile and desktop
-@media (min-width: 991px) and (max-width: 1350px){
-  #header{
-    height: 110px;
-  }  
-  
+@media (min-width: 991px) and (max-width: 1350px){  
   .services {
         align-content: center;
         justify-content: center;
@@ -185,5 +214,30 @@
           border-width: 35px 85px 0;
       }
     }
+  }
+}
+@media (max-width: 1259px){
+  .contacts {
+    flex-direction: column;
+  }
+  .users-form{
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+      width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+      width: 970px;
+  }
+}
+@media (min-width: 1260px) {
+  .container {
+      width: 1200px;
   }
 }

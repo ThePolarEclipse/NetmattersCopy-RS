@@ -22,11 +22,6 @@ html.slide-out-left {
   left: initial !important;
   right: 0;
 }
-html.slide-out-panel-static {
-  position: static !important;
-  transition: none !important;
-  width: 100% !important;
-}
 
 .slide-out-panel-container {
   background-color: #fff;

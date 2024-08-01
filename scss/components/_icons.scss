@@ -188,3 +188,14 @@ $icons: (
     content: "\e9d9";
     color: orange;
 }
+
+.icon-dbl-arrows{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    &::before{
+        font-family: "icomoon";
+        content: "\e920";
+        padding-right: 15px;
+        font-size: .775rem;
+    }
+}
