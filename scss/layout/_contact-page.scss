@@ -10,10 +10,11 @@
     gap: 20px;
     padding: 20px;
     width: 100%;
+    justify-content: space-between;
 
     .office-item {
         border: 1px solid #ccc;
-        border-radius: 8px;
+        border-radius: 20px 20px 1px 1px;
         overflow: hidden;
         width: 100%;
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
@@ -24,7 +25,6 @@
 
         .image {
             width: 100%;
-            height: 200px;
             overflow: hidden;
             
             a {
@@ -47,21 +47,23 @@
             text-align: left;
             h2 {
                 margin: 0 0 15px;
-                font-size: 1.5rem;
+                font-size: 1.25rem;
+                font-weight: 400;
                 
                 a {
                     text-decoration: none;
-                    color: inherit;
+                    color: #333645;
                 }
             }
 
             p {
+                font-size: .8125rem;
                 margin: 0 0 15px;
                 line-height: 1.6;
             }
 
             .tel {
-                margin: 15px 0;
+                margin: 0;
 
                 .text-web {
                     font-size: 1.625rem;
@@ -93,6 +95,7 @@
 }
 
 .form-container {
+
     color: #333645;
     position: relative;
     padding-left: 15px;
@@ -132,16 +135,18 @@
                 }
             }
         }
-
+        .form-message{
+            padding: 1.0125rem .8125rem;
+        }
         .form-group {
             label {
                 display: block;
                 font-weight: bold;
                 margin-bottom: 5px;
             }
-
             .form-control,
             textarea {
+                font-family: 'Poppins', sans-serif;
                 width: 100%;
                 padding: 8px;
                 border: 1px solid #ccc;
@@ -165,7 +170,6 @@
             }
 
             a {
-                color: #6a1b9a; 
                 text-decoration: underline;
             }
         }
@@ -175,7 +179,6 @@
             margin-bottom: 20px;
 
             a {
-                color: #6a1b9a; 
                 text-decoration: underline;
             }
         }
@@ -186,16 +189,17 @@
             align-items: flex-start;
 
             .btn-primary {
-                background-color: #6a1b9a; 
+                background-color: #333645;; 
                 color: #fff;
-                padding: 10px 20px;
+                line-height: 35px;
+                padding: 5px 15px;
                 border: none;
                 border-radius: 4px;
                 cursor: pointer;
                 font-size: 1rem;
 
                 &:hover {
-                    background-color: darken(#6a1b9a, 10%);
+                    background-color: darken(#22242e, 10%);
                 }
             }
 
@@ -233,20 +237,32 @@
 .section-head {
     background-color: #333645;
     height: 100px;
+    box-shadow: inset 0px 20px 20px 0px rgba(0, 0, 0, .1);
+    padding-top:0;
+    margin-bottom: 45px;
 
     .our-offices {
         align-self: flex-start;
         color: white;
+        font-size: 2.25rem;
+        font-weight: 400;
+        margin: 0 0 28px;
     }
 }
 
-.container:has(.breadcrumb) {
+.border-container {
     border-top: 1px black solid;
+    
+}
+.container:has(.breadcrumb) {
     display: none;
 
     .breadcrumb {
         align-self: flex-start;
     }
+}
+.breadcrumb{
+    margin: 0;
 }
 
 .contacts {
@@ -311,17 +327,30 @@
 }
 
 .users-form{
+    
     width: 50%;
     .form-group{
         width: 95%;
     }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+}
+.row-form{
+    padding: 0 0 0 1.0125rem !important;
 }
 
-=======
+.input-error {
+    border: 2px solid red;
 }
->>>>>>> Stashed changes
-=======
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
 }
->>>>>>> Stashed changes
+
+.dropdown-container{
+    line-height: 2;
+
+    strong{
+        color: #333645;
+    }
+}

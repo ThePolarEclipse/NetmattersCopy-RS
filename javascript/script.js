@@ -131,33 +131,58 @@ function validateEmail(email) {
     return re.test(email);
 }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  // Assign the current image to an email address
-$('#contact-form').on('submit', function(event) {
-    
-=======
-// Assign the current image to an email address
-$('#contact-form').on('submit', function(event) {
->>>>>>> Stashed changes
-=======
-// Assign the current image to an email address
-$('#contact-form').on('submit', function(event) {
->>>>>>> Stashed changes
-    const email = $('#emailInput').val();
+// Function to validate phone number (UK mobile number validation)
+function validatePhoneNumber(phoneNumber) {
+    const re = /^07\d{9}$/; // UK phone numbers starting with '07' and 11 digits total
+    return re.test(phoneNumber);
+}
+
+// Function to validate form
+function validateForm() {
+    let isValid = true;
+    const requiredFields = ['#users_name', '#emailInput', '#message', '#telephone']; 
+
+    // Clear previous error styles and messages
+    $('.error-message').remove();
+    $('.input-error').removeClass('input-error');
+
+    requiredFields.forEach(function (field) {
+        const input = $(field);
+        if (input.val().trim() === '') {
+            isValid = false;
+            input.addClass('input-error');
+            input.after('<span class="error-message" style="color: red;">This field is required.</span>');
+        }
+    });
 
     // Check for email validation
+    const email = $('#emailInput').val();
     if (!validateEmail(email)) {
-        alert('Please enter a valid email address.');
-        event.preventDefault();
-        return;
+        isValid = false;
+        $('#emailInput').addClass('input-error');
+        $('#emailInput').after('<span class="error-message" style="color: red;">Please enter a valid email address.</span>');
     }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
+    // Check for phone number validation
+    const phoneNumber = $('#telephone').val();
+    if (!validatePhoneNumber(phoneNumber)) {
+        isValid = false;
+        $('#telephone').addClass('input-error');
+        $('#telephone').after('<span class="error-message" style="color: red;">Please enter a valid phone number (11 digits, starting with 07).</span>');
+    }
+
+    return isValid;
+}
+
+$('#contact-form').on('submit', function(event) {
+    event.preventDefault(); // Prevent form submission for validation
+    if (validateForm()) {
+         $(this).unbind('submit').submit(); // Submit after validation
+    }
 });
-=======
+$(document).ready(function() {
+    // Automatically hide success or error messages after 3 secs
+    setTimeout(function() {
+        $('.success-message, .error-message').fadeOut('slow');
+    }, 3000);
 });
->>>>>>> Stashed changes
-=======
-});
->>>>>>> Stashed changes

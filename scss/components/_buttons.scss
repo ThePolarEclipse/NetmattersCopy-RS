@@ -33,6 +33,7 @@
     font-size: 20px;
     margin-top: 20px;
     margin-right: 8px;
+    text-wrap: nowrap;
   }
 
   &-trustpilot {
@@ -42,6 +43,7 @@
     font-size: 20px;
     margin-top: 20px;
     margin-right: 8px;
+    text-wrap: nowrap;
   }
 
   &-mid-wcu {
@@ -166,8 +168,9 @@
     padding: 21px;
     font-size: 18px;
 
-    margin: 20px 10px;
+    margin: 20px 0px;
     text-align: center;
+    width: 100%;
   }
 
   &-title{
@@ -181,7 +184,7 @@
     line-height: 1.5rem;
 
     height: 128px;
-    width: 80%;
+    width: 100%;
   }
 }
 

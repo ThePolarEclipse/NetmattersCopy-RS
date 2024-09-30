@@ -26,6 +26,13 @@
   content: "\e900";
 }
 
+.iconV-drop::after {
+    font-family: "icomoonV";
+    content: "\e900";
+    font-size: 20px;
+    color: #333645;
+  }
+
 .icon-search::before {
   content: "\e904";
   font-size: 20px;

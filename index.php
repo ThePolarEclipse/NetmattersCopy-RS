@@ -19,15 +19,7 @@ $result = $conn->query($sql);
     <body>  
         <button type="button" class="btn-cookies btn">Manage Consent</button>
         <button type="button" class="btn-chat btn"><span class="icon-chat"></span></button>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        <div id="cookie-wrapper">
-=======
         <div id="cookie-wrapper" style="display:none;">
->>>>>>> Stashed changes
-=======
-        <div id="cookie-wrapper" style="display:none;">
->>>>>>> Stashed changes
             <div id="cookie-checker">
                 <h3>Cookies Policy</h3>
                 <p>
@@ -43,10 +35,6 @@ $result = $conn->query($sql);
                 </div>
             </div>
         </div>
-        <!-- start of the sidebar -->
-        <?php include 'php/menu.php'; ?>
-        <!-- end of the sidebar -->
-        <div id="panel">
             <?php include 'php/header.php'; ?>
             <div>
                 <main>
@@ -61,11 +49,7 @@ $result = $conn->query($sql);
                             <div class="content">
                                 <div class="container content-container">
                                     <div class="text">
-<<<<<<< Updated upstream
-                                        <div class="h1">
-=======
                                         <div class="h1 h1-long">
->>>>>>> Stashed changes
                                             The East Of England's Leading Technology Company
                                         </div>
                                         <p>Performance-driven digital and technology services<br>with complete transparency.</p>
@@ -356,7 +340,7 @@ $result = $conn->query($sql);
                                 </div>
                                 <p class="client-quote">Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</p>
                                 <p><span class="client-quote-author">Eleanor Bishop, Head of Marketing - <a href="#">Ashcroft Partnership LLP</a></span></p>
-                                <div>
+                                <div class="middle-btns">
                                     <a href="#" target="_blank" class="btn btn-google darken">Google Reviews <em class="icon-arrow-right"></em></a>
                                     <a href="#" target="_blank" class="btn btn-trustpilot darken">TrustPilot Reviews <em class="icon-arrow-right"></em></a>
                                 </div>
@@ -376,24 +360,12 @@ $result = $conn->query($sql);
                             <div class="article-list">
                                 <?php
                                 if ($result->num_rows > 0) {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-                                    while($row = $result->fetch_assoc()) {
-                                        ?>
-                                        <div class="article-item">
-=======
-=======
->>>>>>> Stashed changes
                                     $counter = 0; // Counter to find 3rd article
                                     while($row = $result->fetch_assoc()) {
                                         $counter++;
                                         $additionalClass = ($counter == 3) ? ' article-third' : ''; // Adds the class for the third article so it can be hidden
                                         ?>
                                         <div class="article-item<?php echo $additionalClass; ?>">
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
                                             <a class="article-link" href="#"></a>
                                             <a href="#" class="<?php echo strtolower($row['type']); ?> article-type" title="View all: <?php echo $row['type']; ?>"><?php echo $row['type']; ?></a>
                                             <div class="article-image">
@@ -416,6 +388,10 @@ $result = $conn->query($sql);
                                             </div>
                                         </div>
                                         <?php
+                                        // Will make it so only 3 articles are retrieved, in case of additional being within the database.
+                                        if ($counter >= 3) {
+                                            break;
+                                        }
                                     }
                                 } else {
                                     echo "<p>No news posts found.</p>";
@@ -446,22 +422,5 @@ $result = $conn->query($sql);
             <!-- Footer -->
             <div id="container">
                 <?php include 'php/footer.php'; ?>
-            </div>
-        </div>
-        <script src="javascript/jquery-3.7.1.min.js"></script>
-        <script src="javascript/plugins/slick/slick.min.js"></script>
-        <script src="javascript/plugins/jquery.sticky.js"></script>
-
-        <script src="javascript/plugins/jquery-SlideOutPanel-master/dist/js/slide-out-panel.js"></script> 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-        <script src="javascript/plugins/velocity.min.js"></script> 
->>>>>>> Stashed changes
-=======
-        <script src="javascript/plugins/velocity.min.js"></script> 
->>>>>>> Stashed changes
-
-        <script src="javascript/script.js"></script>
     </body>
 </html>

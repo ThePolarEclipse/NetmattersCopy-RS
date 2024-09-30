@@ -16,11 +16,6 @@
   .container:has(.breadcrumb){
     display: block!important;
   }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
 
   .btn-burger{
     position: relative;
@@ -31,10 +26,6 @@
     position: relative;
     left: -30px;
   }
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   
   #cookie-checker{
     width:600px;
@@ -164,7 +155,8 @@
     .section-head{
       background-color: white;
       .our-offices{
-          color: #666;
+          color: #333645;
+          padding-top: 20px;
       }
     }
 }
@@ -231,9 +223,15 @@
   }
   .users-form{
     width: 100%;
+
+    .form-group{
+      width: 100%;
+    }
   }
-<<<<<<< Updated upstream
-=======
+  .row-form{
+    padding: 1.0125rem .8125rem!important;
+    padding-bottom: 0!important;
+  }
 }
 
 @media (min-width: 768px) {
@@ -251,5 +249,14 @@
   .container {
       width: 1200px;
   }
->>>>>>> Stashed changes
+  .middle-btns{
+    display: flex;
+  }
 }
+
+@media (max-width: 440px) {
+  .scale-email {
+      font-size: 6vw!important;
+  }
+}
+

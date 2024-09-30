@@ -7,16 +7,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $telephone = $_POST['user-tel'];
     $company = $_POST['company'];
     $message = $_POST['user-message'];
+    $marketing = isset($_POST['marketing-pref']) ? $_POST['marketing-pref'] : 0;
     
-    $stmt = $conn->prepare("INSERT INTO messages (Name, Email, Telephone, Company, Message) VALUES (?, ?, ?, ?, ?)");
-    $stmt->bind_param("sssss", $name, $email, $telephone, $company, $message);
+    $stmt = $conn->prepare("INSERT INTO messages (Name, Email, Telephone, Company, Message, Marketing) VALUES (?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssssi", $name, $email, $telephone, $company, $message, $marketing);
 
     if ($stmt->execute()) {
-        echo '<script type="text/javascript">
-            alert("Message sent!");
-        </script>'; 
+        echo '<div class="success-message" style="color: green; font-weight: bold;">Message sent successfully!</div>';
     } else {
-        echo "Error: " . $stmt->error;
+        echo '<div class="error-message" style="color: red; font-weight: bold;">Error: ' . $stmt->error . '</div>';
     }
 
     $stmt->close();
@@ -38,15 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <body>  
         <button type="button" class="btn-cookies btn">Manage Consent</button>
         <button type="button" class="btn-chat btn"><span class="icon-chat"></span></button>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        <div id="cookie-wrapper">
-=======
         <div id="cookie-wrapper" style="display:none;">
->>>>>>> Stashed changes
-=======
-        <div id="cookie-wrapper" style="display:none;">
->>>>>>> Stashed changes
             <div id="cookie-checker">
                 <h3>Cookies Policy</h3>
                 <p>
@@ -62,15 +53,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
             </div>
         </div>
-        <!-- start of the sidebar -->
-        <?php include 'php/menu.php'; ?>
-        <!-- end of the sidebar -->
-        <div id="panel">
             <?php include 'php/header.php'; ?>
             <div>
                 <main id="contacts">
-                    <div class="container">
-                        <p class="breadcrumb"><small><strong>Home</strong> / Our Offices</small></p>
+                    <div class="border-container">
+                        <div class="container">
+                            <p class="breadcrumb"><small><strong>Home</strong> / Our Offices</small></p>
+                        </div>
                     </div>
                     <div class="section-head">
                         <div class="container">
@@ -144,10 +133,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <!-- EMAIL SECTION -->
 
                         <div class="contacts">
-                            <div>
+                            <div class="dropdown-container">
                                 <div class="contact-net">
                                     <p><strong>Email us on:</strong><br></p>
-                                    <p><a href="mailto:sales@netmatters.com" class="h3 text-web">sales@netmatters.com</a></p>
+                                    <p><a href="mailto:sales@netmatters.com" class="h3 text-web scale-email">sales@netmatters.com</a></p>
                                     <p><strong>Business hours:</strong></p>
                                     <p><strong>Monday - Friday 07:00 - 18:00&nbsp;</strong></p>
                                 </div>
@@ -155,7 +144,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     <div class="question out-of-hours">
                                             <details id="out-dropdown">
                                                 <summary>
-                                                    <h4>Out of Hours IT Support V</h4>
+                                                    <h4 class="iconV-drop"><strong>Out of Hours IT Support</strong></h4>
                                                 </summary>
                                                 <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
                                                 <p>
@@ -173,7 +162,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 </div>
                                 <div class="form-container">
                                     <form action="contact-us.php" method="POST" id="contact-form">
-                                        <div class="row">
+                                        <div class="row row-form">
                                             <div class="users-form">
                                                 <div class="form-group">
                                                     <label for="users_name" class="required">Your Name</label>
@@ -195,13 +184,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group form-message">
                                             <label for="message" class="required">Message</label>
                                             <textarea class="form-control" name="user-message" cols="50" rows="10" id="message" required>Hi, I am interested in discussing Our Offices solution, could you please give me a call or send an email?</textarea>
                                         </div>
                                         <div class="form-group">
                                             <label class="pretty-checkbox" for="input_checkbox">
-                                                <input type="checkbox" class="checkbox_input" id="input_checkbox" name="marketing-pref" required>
+                                                <input type="hidden" name="marketing-pref" value="0">
+                                                <input type="checkbox" class="checkbox_input" id="input_checkbox" name="marketing-pref" value="1">
                                                 <span class="fake-checkbox"></span>
                                                 <span class="check-text">
                                                     Please tick this box if you wish to receive marketing information from us. 
@@ -225,6 +215,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                                 Fields Required
                                             </small>
                                         </div>
+                                        <div id="error-message" style="color: red; display: none;"></div>
+                                        <div id="success-message" style="color: green; display: none;"></div>
                                     </form>
                                 </div>
                             </div>
@@ -234,21 +226,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <!-- Footer -->
             <?php include 'php/footer.php'; ?>
-        </div>
-        <script src="javascript/jquery-3.7.1.min.js"></script>
-        <script src="javascript/plugins/slick/slick.min.js"></script>
-        <script src="javascript/plugins/jquery.sticky.js"></script>
-
-        <script src="javascript/plugins/jquery-SlideOutPanel-master/dist/js/slide-out-panel.js"></script> 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-        <script src="javascript/plugins/velocity.min.js"></script> 
->>>>>>> Stashed changes
-=======
-        <script src="javascript/plugins/velocity.min.js"></script> 
->>>>>>> Stashed changes
-
-        <script src="javascript/script.js"></script>
     </body>
 </html>

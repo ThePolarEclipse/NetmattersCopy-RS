@@ -52,10 +52,12 @@
   color: white;
   background: #323544;
   flex-direction: row;
-  padding: 50px;
 
   box-shadow: 0 0 0 100vmax #323544;
   clip-path: inset(0 -100vmax); 
+
+  padding-top: 20px;
+  padding-bottom: 50px;
   
 
   &-item{
@@ -98,10 +100,7 @@
 .active .bar-bottom{
   transform: translate(-50%, -50%) rotate(-225deg);
   top:50%;
-<<<<<<< Updated upstream
-=======
 }
 .h1-long{
   max-width: 80%;
->>>>>>> Stashed changes
 }

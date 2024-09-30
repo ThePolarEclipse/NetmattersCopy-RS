@@ -71,3 +71,14 @@
                         </div>
                     </div>
                 </footer>
+            
+        </div>
+        </div>
+        <script src="javascript/jquery-3.7.1.min.js"></script>
+        <script src="javascript/plugins/slick/slick.min.js"></script>
+        <script src="javascript/plugins/jquery.sticky.js"></script>
+
+        <script src="javascript/plugins/jquery-SlideOutPanel-master/dist/js/slide-out-panel.js"></script> 
+
+        <script src="javascript/plugins/velocity.min.js"></script> 
+        <script src="javascript/script.js"></script>
