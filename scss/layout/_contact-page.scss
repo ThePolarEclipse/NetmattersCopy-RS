@@ -137,6 +137,10 @@
         }
         .form-message{
             padding: 1.0125rem .8125rem;
+
+            textarea{
+                height: 100px;
+            }
         }
         .form-group {
             label {
@@ -266,6 +270,12 @@
 }
 
 .contacts {
+
+    .font500{
+        font-weight: 500 !important;
+        color: black;
+    }
+
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -353,4 +363,10 @@
     strong{
         color: #333645;
     }
+}
+
+.details-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
 }

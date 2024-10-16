@@ -186,3 +186,19 @@ $(document).ready(function() {
         $('.success-message, .error-message').fadeOut('slow');
     }, 3000);
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const detailsElements = document.querySelectorAll('details');
+
+    detailsElements.forEach(detail => {
+        detail.addEventListener('toggle', function() {
+            const content = this.querySelector('.details-content');
+            if (this.open) {
+                content.style.maxHeight = content.scrollHeight + 'px';
+            } else {
+                content.style.maxHeight = '0';
+            }
+        });
+    });
+});
